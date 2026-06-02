@@ -1,23 +1,56 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
-.vscode/
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
-*.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-files
-*.bclicense
-*.flf
-#Test results file
-TestResults.xml
+# ========================
+# SECRETS — never commit
+# ========================
+.env
+*.env
+.env.*
+
+# ========================
+# Vector Database (auto-generated, large)
+# ========================
+chroma_db/
+chroma_db_2/
+*.sqlite3
+
+# ========================
+# Long-term memory (personal session data)
+# ========================
+memory/
+
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ========================
+# Virtual environment
+# ========================
+venv/
+env/
+.venv/
+.env/
+
+# ========================
+# OS files
+# ========================
+.DS_Store           # Mac
+Thumbs.db           # Windows
+*.swp               # Vim
+
+# ========================
+# Jupyter notebooks checkpoints
+# ========================
+.ipynb_checkpoints/
+
+# ========================
+# Logs
+# ========================
+*.log
+logs/

@@ -1,0 +1,780 @@
+1–1Introduction
+This two-year course in physics is presented from the point of view that you, the reader, are going to be a physicist. This is not necessarily the case of course, but that is what every professor in every subject assumes! If you are going to be a physicist, you will have a lot to study: two hundred years of the most rapidly developing field of knowledge that there is. So much knowledge, in fact, that you might think that you cannot learn all of it in four years, and truly you cannot; you will have to go to graduate school too!
+
+Surprisingly enough, in spite of the tremendous amount of work that has been done for all this time it is possible to condense the enormous mass of results to a large extent—that is, to find laws which summarize all our knowledge. Even so, the laws are so hard to grasp that it is unfair to you to start exploring this tremendous subject without some kind of map or outline of the relationship of one part of the subject of science to another. Following these preliminary remarks, the first three chapters will therefore outline the relation of physics to the rest of the sciences, the relations of the sciences to each other, and the meaning of science, to help us develop a “feel” for the subject.
+
+You might ask why we cannot teach physics by just giving the basic laws on page one and then showing how they work in all possible circumstances, as we do in Euclidean geometry, where we state the axioms and then make all sorts of deductions. (So, not satisfied to learn physics in four years, you want to learn it in four minutes?) We cannot do it in this way for two reasons. First, we do not yet know all the basic laws: there is an expanding frontier of ignorance. Second, the correct statement of the laws of physics involves some very unfamiliar ideas which require advanced mathematics for their description. Therefore, one needs a considerable amount of preparatory training even to learn what the words mean. No, it is not possible to do it that way. We can only do it piece by piece.
+
+Each piece, or part, of the whole of nature is always merely an approximation to the complete truth, or the complete truth so far as we know it. In fact, everything we know is only some kind of approximation, because we know that we do not know all the laws as yet. Therefore, things must be learned only to be unlearned again or, more likely, to be corrected.
+
+The principle of science, the definition, almost, is the following: The test of all knowledge is experiment. Experiment is the sole judge of scientific “truth.” But what is the source of knowledge? Where do the laws that are to be tested come from? Experiment, itself, helps to produce these laws, in the sense that it gives us hints. But also needed is imagination to create from these hints the great generalizations—to guess at the wonderful, simple, but very strange patterns beneath them all, and then to experiment to check again whether we have made the right guess. This imagining process is so difficult that there is a division of labor in physics: there are theoretical physicists who imagine, deduce, and guess at new laws, but do not experiment; and then there are experimental physicists who experiment, imagine, deduce, and guess.
+
+We said that the laws of nature are approximate: that we first find the “wrong” ones, and then we find the “right” ones. Now, how can an experiment be “wrong”? First, in a trivial way: if something is wrong with the apparatus that you did not notice. But these things are easily fixed, and checked back and forth. So without snatching at such minor things, how can the results of an experiment be wrong? Only by being inaccurate. For example, the mass of an object never seems to change: a spinning top has the same weight as a still one. So a “law” was invented: mass is constant, independent of speed. That “law” is now found to be incorrect. Mass is found to increase with velocity, but appreciable increases require velocities near that of light. A true law is: if an object moves with a speed of less than one hundred miles a second the mass is constant to within one part in a million. In some such approximate form this is a correct law. So in practice one might think that the new law makes no significant difference. Well, yes and no. For ordinary speeds we can certainly forget it and use the simple constant-mass law as a good approximation. But for high speeds we are wrong, and the higher the speed, the more wrong we are.
+
+Finally, and most interesting, philosophically we are completely wrong with the approximate law. Our entire picture of the world has to be altered even though the mass changes only by a little bit. This is a very peculiar thing about the philosophy, or the ideas, behind the laws. Even a very small effect sometimes requires profound changes in our ideas.
+
+Now, what should we teach first? Should we teach the correct but unfamiliar law with its strange and difficult conceptual ideas, for example the theory of relativity, four-dimensional space-time, and so on? Or should we first teach the simple “constant-mass” law, which is only approximate, but does not involve such difficult ideas? The first is more exciting, more wonderful, and more fun, but the second is easier to get at first, and is a first step to a real understanding of the first idea. This point arises again and again in teaching physics. At different times we shall have to resolve it in different ways, but at each stage it is worth learning what is now known, how accurate it is, how it fits into everything else, and how it may be changed when we learn more.
+
+Let us now proceed with our outline, or general map, of our understanding of science today (in particular, physics, but also of other sciences on the periphery), so that when we later concentrate on some particular point we will have some idea of the background, why that particular point is interesting, and how it fits into the big structure. So, what is our overall picture of the world?
+
+1–2Matter is made of atoms
+If, in some cataclysm, all of scientific knowledge were to be destroyed, and only one sentence passed on to the next generations of creatures, what statement would contain the most information in the fewest words? I believe it is the atomic hypothesis (or the atomic fact, or whatever you wish to call it) that all things are made of atoms—little particles that move around in perpetual motion, attracting each other when they are a little distance apart, but repelling upon being squeezed into one another. In that one sentence, you will see, there is an enormous amount of information about the world, if just a little imagination and thinking are applied.
+
+
+
+To illustrate the power of the atomic idea, suppose that we have a drop of water a quarter of an inch on the side. If we look at it very closely we see nothing but water—smooth, continuous water. Even if we magnify it with the best optical microscope available—roughly two thousand times—then the water drop will be roughly forty feet across, about as big as a large room, and if we looked rather closely, we would still see relatively smooth water—but here and there small football-shaped things swimming back and forth. Very interesting. These are paramecia. You may stop at this point and get so curious about the paramecia with their wiggling cilia and twisting bodies that you go no further, except perhaps to magnify the paramecia still more and see inside. This, of course, is a subject for biology, but for the present we pass on and look still more closely at the water material itself, magnifying it two thousand times again. Now the drop of water extends about fifteen miles across, and if we look very closely at it we see a kind of teeming, something which no longer has a smooth appearance—it looks something like a crowd at a football game as seen from a very great distance. In order to see what this teeming is about, we will magnify it another two hundred and fifty times and we will see something similar to what is shown in Fig. 1–1. This is a picture of water magnified a billion times, but idealized in several ways. In the first place, the particles are drawn in a simple manner with sharp edges, which is inaccurate. Secondly, for simplicity, they are sketched almost schematically in a two-dimensional arrangement, but of course they are moving around in three dimensions. Notice that there are two kinds of “blobs” or circles to represent the atoms of oxygen (black) and hydrogen (white), and that each oxygen has two hydrogens tied to it. (Each little group of an oxygen with its two hydrogens is called a molecule.) The picture is idealized further in that the real particles in nature are continually jiggling and bouncing, turning and twisting around one another. You will have to imagine this as a dynamic rather than a static picture. Another thing that cannot be illustrated in a drawing is the fact that the particles are “stuck together”—that they attract each other, this one pulled by that one, etc. The whole group is “glued together,” so to speak. On the other hand, the particles do not squeeze through each other. If you try to squeeze two of them too close together, they repel.
+
+The atoms are 1
+ or 2×10−8
+ cm in radius. Now 10−8
+ cm is called an angstrom (just as another name), so we say they are 1 or 2 angstroms (Å) in radius. Another way to remember their size is this: if an apple is magnified to the size of the earth, then the atoms in the apple are approximately the size of the original apple.
+
+Now imagine this great drop of water with all of these jiggling particles stuck together and tagging along with each other. The water keeps its volume; it does not fall apart, because of the attraction of the molecules for each other. If the drop is on a slope, where it can move from one place to another, the water will flow, but it does not just disappear—things do not just fly apart—because of the molecular attraction. Now the jiggling motion is what we represent as heat: when we increase the temperature, we increase the motion. If we heat the water, the jiggling increases and the volume between the atoms increases, and if the heating continues there comes a time when the pull between the molecules is not enough to hold them together and they do fly apart and become separated from one another. Of course, this is how we manufacture steam out of water—by increasing the temperature; the particles fly apart because of the increased motion.
+
+
+
+In Fig. 1–2 we have a picture of steam. This picture of steam fails in one respect: at ordinary atmospheric pressure there certainly would not be as many as three water molecules in this figure. Most squares this size would contain none—but we accidentally have two and a half or three in the picture (just so it would not be completely blank). Now in the case of steam we see the characteristic molecules more clearly than in the case of water. For simplicity, the molecules are drawn so that there is a 120∘
+ angle between the hydrogen atoms. In actual fact the angle is 105∘3′
+, and the distance between the center of a hydrogen and the center of the oxygen is 0.957 Å, so we know this molecule very well.
+
+Let us see what some of the properties of steam vapor or any other gas are. The molecules, being separated from one another, will bounce against the walls. Imagine a room with a number of tennis balls (a hundred or so) bouncing around in perpetual motion. When they bombard the wall, this pushes the wall away. (Of course we would have to push the wall back.) This means that the gas exerts a jittery force which our coarse senses (not being ourselves magnified a billion times) feel only as an average push. In order to confine a gas we must apply a pressure. Figure 1–3 shows a standard vessel for holding gases (used in all textbooks), a cylinder with a piston in it. Now, it makes no difference what the shapes of water molecules are, so for simplicity we shall draw them as tennis balls or little dots. These things are in perpetual motion in all directions. So many of them are hitting the top piston all the time that to keep it from being patiently knocked out of the tank by this continuous banging, we shall have to hold the piston down by a certain force, which we call the pressure (really, the pressure times the area is the force). Clearly, the force is proportional to the area, for if we increase the area but keep the number of molecules per cubic centimeter the same, we increase the number of collisions with the piston in the same proportion as the area was increased.
+
+
+
+Now let us put twice as many molecules in this tank, so as to double the density, and let them have the same speed, i.e., the same temperature. Then, to a close approximation, the number of collisions will be doubled, and since each will be just as “energetic” as before, the pressure is proportional to the density. If we consider the true nature of the forces between the atoms, we would expect a slight decrease in pressure because of the attraction between the atoms, and a slight increase because of the finite volume they occupy. Nevertheless, to an excellent approximation, if the density is low enough that there are not many atoms, the pressure is proportional to the density.
+
+We can also see something else: If we increase the temperature without changing the density of the gas, i.e., if we increase the speed of the atoms, what is going to happen to the pressure? Well, the atoms hit harder because they are moving faster, and in addition they hit more often, so the pressure increases. You see how simple the ideas of atomic theory are.
+
+Let us consider another situation. Suppose that the piston moves inward, so that the atoms are slowly compressed into a smaller space. What happens when an atom hits the moving piston? Evidently it picks up speed from the collision. You can try it by bouncing a ping-pong ball from a forward-moving paddle, for example, and you will find that it comes off with more speed than that with which it struck. (Special example: if an atom happens to be standing still and the piston hits it, it will certainly move.) So the atoms are “hotter” when they come away from the piston than they were before they struck it. Therefore all the atoms which are in the vessel will have picked up speed. This means that when we compress a gas slowly, the temperature of the gas increases. So, under slow compression, a gas will increase in temperature, and under slow expansion it will decrease in temperature.
+
+
+
+We now return to our drop of water and look in another direction. Suppose that we decrease the temperature of our drop of water. Suppose that the jiggling of the molecules of the atoms in the water is steadily decreasing. We know that there are forces of attraction between the atoms, so that after a while they will not be able to jiggle so well. What will happen at very low temperatures is indicated in Fig. 1–4: the molecules lock into a new pattern which is ice. This particular schematic diagram of ice is wrong because it is in two dimensions, but it is right qualitatively. The interesting point is that the material has a definite place for every atom, and you can easily appreciate that if somehow or other we were to hold all the atoms at one end of the drop in a certain arrangement, each atom in a certain place, then because of the structure of interconnections, which is rigid, the other end miles away (at our magnified scale) will have a definite location. So if we hold a needle of ice at one end, the other end resists our pushing it aside, unlike the case of water, in which the structure is broken down because of the increased jiggling so that the atoms all move around in different ways. The difference between solids and liquids is, then, that in a solid the atoms are arranged in some kind of an array, called a crystalline array, and they do not have a random position at long distances; the position of the atoms on one side of the crystal is determined by that of other atoms millions of atoms away on the other side of the crystal. Figure 1–4 is an invented arrangement for ice, and although it contains many of the correct features of ice, it is not the true arrangement. One of the correct features is that there is a part of the symmetry that is hexagonal. You can see that if we turn the picture around an axis by 60∘
+, the picture returns to itself. So there is a symmetry in the ice which accounts for the six-sided appearance of snowflakes. Another thing we can see from Fig. 1–4 is why ice shrinks when it melts. The particular crystal pattern of ice shown here has many “holes” in it, as does the true ice structure. When the organization breaks down, these holes can be occupied by molecules. Most simple substances, with the exception of water and type metal, expand upon melting, because the atoms are closely packed in the solid crystal and upon melting need more room to jiggle around, but an open structure collapses, as in the case of water.
+
+Now although ice has a “rigid” crystalline form, its temperature can change—ice has heat. If we wish, we can change the amount of heat. What is the heat in the case of ice? The atoms are not standing still. They are jiggling and vibrating. So even though there is a definite order to the crystal—a definite structure—all of the atoms are vibrating “in place.” As we increase the temperature, they vibrate with greater and greater amplitude, until they shake themselves out of place. We call this melting. As we decrease the temperature, the vibration decreases and decreases until, at absolute zero, there is a minimum amount of vibration that the atoms can have, but not zero. This minimum amount of motion that atoms can have is not enough to melt a substance, with one exception: helium. Helium merely decreases the atomic motions as much as it can, but even at absolute zero there is still enough motion to keep it from freezing. Helium, even at absolute zero, does not freeze, unless the pressure is made so great as to make the atoms squash together. If we increase the pressure, we can make it solidify.
+
+1–3Atomic processes
+
+
+So much for the description of solids, liquids, and gases from the atomic point of view. However, the atomic hypothesis also describes processes, and so we shall now look at a number of processes from an atomic standpoint. The first process that we shall look at is associated with the surface of the water. What happens at the surface of the water? We shall now make the picture more complicated—and more realistic—by imagining that the surface is in air. Figure 1–5 shows the surface of water in air. We see the water molecules as before, forming a body of liquid water, but now we also see the surface of the water. Above the surface we find a number of things: First of all there are water molecules, as in steam. This is water vapor, which is always found above liquid water. (There is an equilibrium between the steam vapor and the water which will be described later.) In addition we find some other molecules—here two oxygen atoms stuck together by themselves, forming an oxygen molecule, there two nitrogen atoms also stuck together to make a nitrogen molecule. Air consists almost entirely of nitrogen, oxygen, some water vapor, and lesser amounts of carbon dioxide, argon, and other things. So above the water surface is the air, a gas, containing some water vapor. Now what is happening in this picture? The molecules in the water are always jiggling around. From time to time, one on the surface happens to be hit a little harder than usual, and gets knocked away. It is hard to see that happening in the picture because it is a still picture. But we can imagine that one molecule near the surface has just been hit and is flying out, or perhaps another one has been hit and is flying out. Thus, molecule by molecule, the water disappears—it evaporates. But if we close the vessel above, after a while we shall find a large number of molecules of water amongst the air molecules. From time to time, one of these vapor molecules comes flying down to the water and gets stuck again. So we see that what looks like a dead, uninteresting thing—a glass of water with a cover, that has been sitting there for perhaps twenty years—really contains a dynamic and interesting phenomenon which is going on all the time. To our eyes, our crude eyes, nothing is changing, but if we could see it a billion times magnified, we would see that from its own point of view it is always changing: molecules are leaving the surface, molecules are coming back.
+
+Why do we see no change? Because just as many molecules are leaving as are coming back! In the long run “nothing happens.” If we then take the top of the vessel off and blow the moist air away, replacing it with dry air, then the number of molecules leaving is just the same as it was before, because this depends on the jiggling of the water, but the number coming back is greatly reduced because there are so many fewer water molecules above the water. Therefore there are more going out than coming in, and the water evaporates. Hence, if you wish to evaporate water turn on the fan!
+
+Here is something else: Which molecules leave? When a molecule leaves it is due to an accidental, extra accumulation of a little bit more than ordinary energy, which it needs if it is to break away from the attractions of its neighbors. Therefore, since those that leave have more energy than the average, the ones that are left have less average motion than they had before. So the liquid gradually cools if it evaporates. Of course, when a molecule of vapor comes from the air to the water below there is a sudden great attraction as the molecule approaches the surface. This speeds up the incoming molecule and results in generation of heat. So when they leave they take away heat; when they come back they generate heat. Of course when there is no net evaporation the result is nothing—the water is not changing temperature. If we blow on the water so as to maintain a continuous preponderance in the number evaporating, then the water is cooled. Hence, blow on soup to cool it!
+
+Of course you should realize that the processes just described are more complicated than we have indicated. Not only does the water go into the air, but also, from time to time, one of the oxygen or nitrogen molecules will come in and “get lost” in the mass of water molecules, and work its way into the water. Thus the air dissolves in the water; oxygen and nitrogen molecules will work their way into the water and the water will contain air. If we suddenly take the air away from the vessel, then the air molecules will leave more rapidly than they come in, and in doing so will make bubbles. This is very bad for divers, as you may know.
+
+
+
+Now we go on to another process. In Fig. 1–6 we see, from an atomic point of view, a solid dissolving in water. If we put a crystal of salt in the water, what will happen? Salt is a solid, a crystal, an organized arrangement of “salt atoms.” Figure 1–7 is an illustration of the three-dimensional structure of common salt, sodium chloride. Strictly speaking, the crystal is not made of atoms, but of what we call ions. An ion is an atom which either has a few extra electrons or has lost a few electrons. In a salt crystal we find chlorine ions (chlorine atoms with an extra electron) and sodium ions (sodium atoms with one electron missing). The ions all stick together by electrical attraction in the solid salt, but when we put them in the water we find, because of the attractions of the negative oxygen and positive hydrogen for the ions, that some of the ions jiggle loose. In Fig. 1–6 we see a chlorine ion getting loose, and other atoms floating in the water in the form of ions. This picture was made with some care. Notice, for example, that the hydrogen ends of the water molecules are more likely to be near the chlorine ion, while near the sodium ion we are more likely to find the oxygen end, because the sodium is positive and the oxygen end of the water is negative, and they attract electrically. Can we tell from this picture whether the salt is dissolving in water or crystallizing out of water? Of course we cannot tell, because while some of the atoms are leaving the crystal other atoms are rejoining it. The process is a dynamic one, just as in the case of evaporation, and it depends on whether there is more or less salt in the water than the amount needed for equilibrium. By equilibrium we mean that situation in which the rate at which atoms are leaving just matches the rate at which they are coming back. If there is almost no salt in the water, more atoms leave than return, and the salt dissolves. If, on the other hand, there are too many “salt atoms,” more return than leave, and the salt is crystallizing.
+
+In passing, we mention that the concept of a molecule of a substance is only approximate and exists only for a certain class of substances. It is clear in the case of water that the three atoms are actually stuck together. It is not so clear in the case of sodium chloride in the solid. There is just an arrangement of sodium and chlorine ions in a cubic pattern. There is no natural way to group them as “molecules of salt.”
+
+Returning to our discussion of solution and precipitation, if we increase the temperature of the salt solution, then the rate at which atoms are taken away is increased, and so is the rate at which atoms are brought back. It turns out to be very difficult, in general, to predict which way it is going to go, whether more or less of the solid will dissolve. Most substances dissolve more, but some substances dissolve less, as the temperature increases.
+
+1–4Chemical reactions
+In all of the processes which have been described so far, the atoms and the ions have not changed partners, but of course there are circumstances in which the atoms do change combinations, forming new molecules. This is illustrated in Fig. 1–8. A process in which the rearrangement of the atomic partners occurs is what we call a chemical reaction. The other processes so far described are called physical processes, but there is no sharp distinction between the two. (Nature does not care what we call it, she just keeps on doing it.) This figure is supposed to represent carbon burning in oxygen. In the case of oxygen, two oxygen atoms stick together very strongly. (Why do not three or even four stick together? That is one of the very peculiar characteristics of such atomic processes. Atoms are very special: they like certain particular partners, certain particular directions, and so on. It is the job of physics to analyze why each one wants what it wants. At any rate, two oxygen atoms form, saturated and happy, a molecule.)
+
+
+
+The carbon atoms are supposed to be in a solid crystal (which could be graphite or diamond2). Now, for example, one of the oxygen molecules can come over to the carbon, and each atom can pick up a carbon atom and go flying off in a new combination—“carbon-oxygen”—which is a molecule of the gas called carbon monoxide. It is given the chemical name CO. It is very simple: the letters “CO” are practically a picture of that molecule. But carbon attracts oxygen much more than oxygen attracts oxygen or carbon attracts carbon. Therefore in this process the oxygen may arrive with only a little energy, but the oxygen and carbon will snap together with a tremendous vengeance and commotion, and everything near them will pick up the energy. A large amount of motion energy, kinetic energy, is thus generated. This of course is burning; we are getting heat from the combination of oxygen and carbon. The heat is ordinarily in the form of the molecular motion of the hot gas, but in certain circumstances it can be so enormous that it generates light. That is how one gets flames.
+
+In addition, the carbon monoxide is not quite satisfied. It is possible for it to attach another oxygen, so that we might have a much more complicated reaction in which the oxygen is combining with the carbon, while at the same time there happens to be a collision with a carbon monoxide molecule. One oxygen atom could attach itself to the CO and ultimately form a molecule, composed of one carbon and two oxygens, which is designated CO2
+ and called carbon dioxide. If we burn the carbon with very little oxygen in a very rapid reaction (for example, in an automobile engine, where the explosion is so fast that there is not time for it to make carbon dioxide) a considerable amount of carbon monoxide is formed. In many such rearrangements, a very large amount of energy is released, forming explosions, flames, etc., depending on the reactions. Chemists have studied these arrangements of the atoms, and found that every substance is some type of arrangement of atoms.
+
+To illustrate this idea, let us consider another example. If we go into a field of small violets, we know what “that smell” is. It is some kind of molecule, or arrangement of atoms, that has worked its way into our noses. First of all, how did it work its way in? That is rather easy. If the smell is some kind of molecule in the air, jiggling around and being knocked every which way, it might have accidentally worked its way into the nose. Certainly it has no particular desire to get into our nose. It is merely one helpless part of a jostling crowd of molecules, and in its aimless wanderings this particular chunk of matter happens to find itself in the nose.
+
+
+
+Now chemists can take special molecules like the odor of violets, and analyze them and tell us the exact arrangement of the atoms in space. We know that the carbon dioxide molecule is straight and symmetrical: O—C—O. (That can be determined easily, too, by physical methods.) However, even for the vastly more complicated arrangements of atoms that there are in chemistry, one can, by a long, remarkable process of detective work, find the arrangements of the atoms. Figure 1–9 is a picture of the air in the neighborhood of a violet; again we find nitrogen and oxygen in the air, and water vapor. (Why is there water vapor? Because the violet is wet. All plants transpire.) However, we also see a “monster” composed of carbon atoms, hydrogen atoms, and oxygen atoms, which have picked a certain particular pattern in which to be arranged. It is a much more complicated arrangement than that of carbon dioxide; in fact, it is an enormously complicated arrangement. Unfortunately, we cannot picture all that is really known about it chemically, because the precise arrangement of all the atoms is actually known in three dimensions, while our picture is in only two dimensions. The six carbons which form a ring do not form a flat ring, but a kind of “puckered” ring. All of the angles and distances are known. So a chemical formula is merely a picture of such a molecule. When the chemist writes such a thing on the blackboard, he is trying to “draw,” roughly speaking, in two dimensions. For example, we see a “ring” of six carbons, and a “chain” of carbons hanging on the end, with an oxygen second from the end, three hydrogens tied to that carbon, two carbons and three hydrogens sticking up here, etc.
+
+
+
+
+How does the chemist find what the arrangement is? He mixes bottles full of stuff together, and if it turns red, it tells him that it consists of one hydrogen and two carbons tied on here; if it turns blue, on the other hand, that is not the way it is at all. This is one of the most fantastic pieces of detective work that has ever been done—organic chemistry. To discover the arrangement of the atoms in these enormously complicated arrays the chemist looks at what happens when he mixes two different substances together. The physicist could never quite believe that the chemist knew what he was talking about when he described the arrangement of the atoms. For about twenty years it has been possible, in some cases, to look at such molecules (not quite as complicated as this one, but some which contain parts of it) by a physical method, and it has been possible to locate every atom, not by looking at colors, but by measuring where they are. And lo and behold!, the chemists are almost always correct.
+
+It turns out, in fact, that in the odor of violets there are three slightly different molecules, which differ only in the arrangement of the hydrogen atoms.
+
+One problem of chemistry is to name a substance, so that we will know what it is. Find a name for this shape! Not only must the name tell the shape, but it must also tell that here is an oxygen atom, there a hydrogen—exactly what and where each atom is. So we can appreciate that the chemical names must be complex in order to be complete. You see that the name of this thing in the more complete form that will tell you the structure of it is 4-(2, 2, 3, 6 tetramethyl-5-cyclohexenyl)-3-buten-2-one, and that tells you that this is the arrangement. We can appreciate the difficulties that the chemists have, and also appreciate the reason for such long names. It is not that they wish to be obscure, but they have an extremely difficult problem in trying to describe the molecules in words!
+
+How do we know that there are atoms? By one of the tricks mentioned earlier: we make the hypothesis that there are atoms, and one after the other results come out the way we predict, as they ought to if things are made of atoms. There is also somewhat more direct evidence, a good example of which is the following: The atoms are so small that you cannot see them with a light microscope—in fact, not even with an electron microscope. (With a light microscope you can only see things which are much bigger.) Now if the atoms are always in motion, say in water, and we put a big ball of something in the water, a ball much bigger than the atoms, the ball will jiggle around—much as in a push ball game, where a great big ball is pushed around by a lot of people. The people are pushing in various directions, and the ball moves around the field in an irregular fashion. So, in the same way, the “large ball” will move because of the inequalities of the collisions on one side to the other, from one moment to the next. Therefore, if we look at very tiny particles (colloids) in water through an excellent microscope, we see a perpetual jiggling of the particles, which is the result of the bombardment of the atoms. This is called the Brownian motion.
+
+We can see further evidence for atoms in the structure of crystals. In many cases the structures deduced by x-ray analysis agree in their spatial “shapes” with the forms actually exhibited by crystals as they occur in nature. The angles between the various “faces” of a crystal agree, within seconds of arc, with angles deduced on the assumption that a crystal is made of many “layers” of atoms.
+
+Everything is made of atoms. That is the key hypothesis. The most important hypothesis in all of biology, for example, is that everything that animals do, atoms do. In other words, there is nothing that living things do that cannot be understood from the point of view that they are made of atoms acting according to the laws of physics. This was not known from the beginning: it took some experimenting and theorizing to suggest this hypothesis, but now it is accepted, and it is the most useful theory for producing new ideas in the field of biology.
+
+If a piece of steel or a piece of salt, consisting of atoms one next to the other, can have such interesting properties; if water—which is nothing but these little blobs, mile upon mile of the same thing over the earth—can form waves and foam, and make rushing noises and strange patterns as it runs over cement; if all of this, all the life of a stream of water, can be nothing but a pile of atoms, how much more is possible? If instead of arranging the atoms in some definite pattern, again and again repeated, on and on, or even forming little lumps of complexity like the odor of violets, we make an arrangement which is always different from place to place, with different kinds of atoms arranged in many ways, continually changing, not repeating, how much more marvelously is it possible that this thing might behave? Is it possible that that “thing” walking back and forth in front of you, talking to you, is a great glob of these atoms in a very complex arrangement, such that the sheer complexity of it staggers the imagination as to what it can do? When we say we are a pile of atoms, we do not mean we are merely a pile of atoms, because a pile of atoms which is not repeated from one to the other might well have the possibilities which you see before you in the mirror.
+
+In this chapter, we shall examine the most fundamental ideas that we have about physics—the nature of things as we see them at the present time. We shall not discuss the history of how we know that all these ideas are true; you will learn these details in due time.
+
+The things with which we concern ourselves in science appear in myriad forms, and with a multitude of attributes. For example, if we stand on the shore and look at the sea, we see the water, the waves breaking, the foam, the sloshing motion of the water, the sound, the air, the winds and the clouds, the sun and the blue sky, and light; there is sand and there are rocks of various hardness and permanence, color and texture. There are animals and seaweed, hunger and disease, and the observer on the beach; there may be even happiness and thought. Any other spot in nature has a similar variety of things and influences. It is always as complicated as that, no matter where it is. Curiosity demands that we ask questions, that we try to put things together and try to understand this multitude of aspects as perhaps resulting from the action of a relatively small number of elemental things and forces acting in an infinite variety of combinations.
+
+For example: Is the sand other than the rocks? That is, is the sand perhaps nothing but a great number of very tiny stones? Is the moon a great rock? If we understood rocks, would we also understand the sand and the moon? Is the wind a sloshing of the air analogous to the sloshing motion of the water in the sea? What common features do different movements have? What is common to different kinds of sound? How many different colors are there? And so on. In this way we try gradually to analyze all things, to put together things which at first sight look different, with the hope that we may be able to reduce the number of different things and thereby understand them better.
+
+A few hundred years ago, a method was devised to find partial answers to such questions. Observation, reason, and experiment make up what we call the scientific method. We shall have to limit ourselves to a bare description of our basic view of what is sometimes called fundamental physics, or fundamental ideas which have arisen from the application of the scientific method.
+
+What do we mean by “understanding” something? We can imagine that this complicated array of moving things which constitutes “the world” is something like a great chess game being played by the gods, and we are observers of the game. We do not know what the rules of the game are; all we are allowed to do is to watch the playing. Of course, if we watch long enough, we may eventually catch on to a few of the rules. The rules of the game are what we mean by fundamental physics. Even if we knew every rule, however, we might not be able to understand why a particular move is made in the game, merely because it is too complicated and our minds are limited. If you play chess you must know that it is easy to learn all the rules, and yet it is often very hard to select the best move or to understand why a player moves as he does. So it is in nature, only much more so; but we may be able at least to find all the rules. Actually, we do not have all the rules now. (Every once in a while something like castling is going on that we still do not understand.) Aside from not knowing all of the rules, what we really can explain in terms of those rules is very limited, because almost all situations are so enormously complicated that we cannot follow the plays of the game using the rules, much less tell what is going to happen next. We must, therefore, limit ourselves to the more basic question of the rules of the game. If we know the rules, we consider that we “understand” the world.
+
+How can we tell whether the rules which we “guess” at are really right if we cannot analyze the game very well? There are, roughly speaking, three ways. First, there may be situations where nature has arranged, or we arrange nature, to be simple and to have so few parts that we can predict exactly what will happen, and thus we can check how our rules work. (In one corner of the board there may be only a few chess pieces at work, and that we can figure out exactly.)
+
+A second good way to check rules is in terms of less specific rules derived from them. For example, the rule on the move of a bishop on a chessboard is that it moves only on the diagonal. One can deduce, no matter how many moves may be made, that a certain bishop will always be on a red square. So, without being able to follow the details, we can always check our idea about the bishop’s motion by finding out whether it is always on a red square. Of course it will be, for a long time, until all of a sudden we find that it is on a black square (what happened of course, is that in the meantime it was captured, another pawn crossed for queening, and it turned into a bishop on a black square). That is the way it is in physics. For a long time we will have a rule that works excellently in an overall way, even when we cannot follow the details, and then some time we may discover a new rule. From the point of view of basic physics, the most interesting phenomena are of course in the new places, the places where the rules do not work—not the places where they do work! That is the way in which we discover new rules.
+
+The third way to tell whether our ideas are right is relatively crude but probably the most powerful of them all. That is, by rough approximation. While we may not be able to tell why Alekhine moves this particular piece, perhaps we can roughly understand that he is gathering his pieces around the king to protect it, more or less, since that is the sensible thing to do in the circumstances. In the same way, we can often understand nature, more or less, without being able to see what every little piece is doing, in terms of our understanding of the game.
+
+At first the phenomena of nature were roughly divided into classes, like heat, electricity, mechanics, magnetism, properties of substances, chemical phenomena, light or optics, x-rays, nuclear physics, gravitation, meson phenomena, etc. However, the aim is to see complete nature as different aspects of one set of phenomena. That is the problem in basic theoretical physics, today—to find the laws behind experiment; to amalgamate these classes. Historically, we have always been able to amalgamate them, but as time goes on new things are found. We were amalgamating very well, when all of a sudden x-rays were found. Then we amalgamated some more, and mesons were found. Therefore, at any stage of the game, it always looks rather messy. A great deal is amalgamated, but there are always many wires or threads hanging out in all directions. That is the situation today, which we shall try to describe.
+
+Some historic examples of amalgamation are the following. First, take heat and mechanics. When atoms are in motion, the more motion, the more heat the system contains, and so heat and all temperature effects can be represented by the laws of mechanics. Another tremendous amalgamation was the discovery of the relation between electricity, magnetism, and light, which were found to be different aspects of the same thing, which we call today the electromagnetic field. Another amalgamation is the unification of chemical phenomena, the various properties of various substances, and the behavior of atomic particles, which is in the quantum mechanics of chemistry.
+
+The question is, of course, is it going to be possible to amalgamate everything, and merely discover that this world represents different aspects of one thing? Nobody knows. All we know is that as we go along, we find that we can amalgamate pieces, and then we find some pieces that do not fit, and we keep trying to put the jigsaw puzzle together. Whether there are a finite number of pieces, and whether there is even a border to the puzzle, is of course unknown. It will never be known until we finish the picture, if ever. What we wish to do here is to see to what extent this amalgamation process has gone on, and what the situation is at present, in understanding basic phenomena in terms of the smallest set of principles. To express it in a simple manner, what are things made of and how few elements are there?
+
+2–2Physics before 1920
+It is a little difficult to begin at once with the present view, so we shall first see how things looked in about 1920 and then take a few things out of that picture. Before 1920, our world picture was something like this: The “stage” on which the universe goes is the three-dimensional space of geometry, as described by Euclid, and things change in a medium called time. The elements on the stage are particles, for example the atoms, which have some properties. First, the property of inertia: if a particle is moving it keeps on going in the same direction unless forces act upon it. The second element, then, is forces, which were then thought to be of two varieties: First, an enormously complicated, detailed kind of interaction force which held the various atoms in different combinations in a complicated way, which determined whether salt would dissolve faster or slower when we raise the temperature. The other force that was known was a long-range interaction—a smooth and quiet attraction—which varied inversely as the square of the distance, and was called gravitation. This law was known and was very simple. Why things remain in motion when they are moving, or why there is a law of gravitation was, of course, not known.
+
+A description of nature is what we are concerned with here. From this point of view, then, a gas, and indeed all matter, is a myriad of moving particles. Thus many of the things we saw while standing at the seashore can immediately be connected. First the pressure: this comes from the collisions of the atoms with the walls or whatever; the drift of the atoms, if they are all moving in one direction on the average, is wind; the random internal motions are the heat. There are waves of excess density, where too many particles have collected, and so as they rush off they push up piles of particles farther out, and so on. This wave of excess density is sound. It is a tremendous achievement to be able to understand so much. Some of these things were described in the previous chapter.
+
+What kinds of particles are there? There were considered to be 92
+ at that time: 92
+ different kinds of atoms were ultimately discovered. They had different names associated with their chemical properties.
+
+The next part of the problem was, what are the short-range forces? Why does carbon attract one oxygen or perhaps two oxygens, but not three oxygens? What is the machinery of interaction between atoms? Is it gravitation? The answer is no. Gravity is entirely too weak. But imagine a force analogous to gravity, varying inversely with the square of the distance, but enormously more powerful and having one difference. In gravity everything attracts everything else, but now imagine that there are two kinds of “things,” and that this new force (which is the electrical force, of course) has the property that likes repel but unlikes attract. The “thing” that carries this strong interaction is called charge.
+
+Then what do we have? Suppose that we have two unlikes that attract each other, a plus and a minus, and that they stick very close together. Suppose we have another charge some distance away. Would it feel any attraction? It would feel practically none, because if the first two are equal in size, the attraction for the one and the repulsion for the other balance out. Therefore there is very little force at any appreciable distance. On the other hand, if we get very close with the extra charge, attraction arises, because the repulsion of likes and attraction of unlikes will tend to bring unlikes closer together and push likes farther apart. Then the repulsion will be less than the attraction. This is the reason why the atoms, which are constituted out of plus and minus electric charges, feel very little force when they are separated by appreciable distance (aside from gravity). When they come close together, they can “see inside” each other and rearrange their charges, with the result that they have a very strong interaction. The ultimate basis of an interaction between the atoms is electrical. Since this force is so enormous, all the plusses and all minuses will normally come together in as intimate a combination as they can. All things, even ourselves, are made of fine-grained, enormously strongly interacting plus and minus parts, all neatly balanced out. Once in a while, by accident, we may rub off a few minuses or a few plusses (usually it is easier to rub off minuses), and in those circumstances we find the force of electricity unbalanced, and we can then see the effects of these electrical attractions.
+
+To give an idea of how much stronger electricity is than gravitation, consider two grains of sand, a millimeter across, thirty meters apart. If the force between them were not balanced, if everything attracted everything else instead of likes repelling, so that there were no cancellation, how much force would there be? There would be a force of three million tons between the two! You see, there is very, very little excess or deficit of the number of negative or positive charges necessary to produce appreciable electrical effects. This is, of course, the reason why you cannot see the difference between an electrically charged or uncharged thing—so few particles are involved that they hardly make a difference in the weight or size of an object.
+
+With this picture the atoms were easier to understand. They were thought to have a “nucleus” at the center, which is positively electrically charged and very massive, and the nucleus is surrounded by a certain number of “electrons” which are very light and negatively charged. Now we go a little ahead in our story to remark that in the nucleus itself there were found two kinds of particles, protons and neutrons, almost of the same weight and very heavy. The protons are electrically charged and the neutrons are neutral. If we have an atom with six protons inside its nucleus, and this is surrounded by six electrons (the negative particles in the ordinary world of matter are all electrons, and these are very light compared with the protons and neutrons which make nuclei), this would be atom number six in the chemical table, and it is called carbon. Atom number eight is called oxygen, etc., because the chemical properties depend upon the electrons on the outside, and in fact only upon how many electrons there are. So the chemical properties of a substance depend only on a number, the number of electrons. (The whole list of elements of the chemists really could have been called 1
+, 2
+, 3
+, 4
+, 5
+, etc. Instead of saying “carbon,” we could say “element six,” meaning six electrons, but of course, when the elements were first discovered, it was not known that they could be numbered that way, and secondly, it would make everything look rather complicated. It is better to have names and symbols for these things, rather than to call everything by number.)
+
+More was discovered about the electrical force. The natural interpretation of electrical interaction is that two objects simply attract each other: plus against minus. However, this was discovered to be an inadequate idea to represent it. A more adequate representation of the situation is to say that the existence of the positive charge, in some sense, distorts, or creates a “condition” in space, so that when we put the negative charge in, it feels a force. This potentiality for producing a force is called an electric field. When we put an electron in an electric field, we say it is “pulled.” We then have two rules: (a) charges make a field, and (b) charges in fields have forces on them and move. The reason for this will become clear when we discuss the following phenomena: If we were to charge a body, say a comb, electrically, and then place a charged piece of paper at a distance and move the comb back and forth, the paper will respond by always pointing to the comb. If we shake it faster, it will be discovered that the paper is a little behind, there is a delay in the action. (At the first stage, when we move the comb rather slowly, we find a complication which is magnetism. Magnetic influences have to do with charges in relative motion, so magnetic forces and electric forces can really be attributed to one field, as two different aspects of exactly the same thing. A changing electric field cannot exist without magnetism.) If we move the charged paper farther out, the delay is greater. Then an interesting thing is observed. Although the forces between two charged objects should go inversely as the square of the distance, it is found, when we shake a charge, that the influence extends very much farther out than we would guess at first sight. That is, the effect falls off more slowly than the inverse square.
+
+Here is an analogy: If we are in a pool of water and there is a floating cork very close by, we can move it “directly” by pushing the water with another cork. If you looked only at the two corks, all you would see would be that one moved immediately in response to the motion of the other—there is some kind of “interaction” between them. Of course, what we really do is to disturb the water; the water then disturbs the other cork. We could make up a “law” that if you pushed the water a little bit, an object close by in the water would move. If it were farther away, of course, the second cork would scarcely move, for we move the water locally. On the other hand, if we jiggle the cork a new phenomenon is involved, in which the motion of the water moves the water there, etc., and waves travel away, so that by jiggling, there is an influence very much farther out, an oscillatory influence, that cannot be understood from the direct interaction. Therefore the idea of direct interaction must be replaced with the existence of the water, or in the electrical case, with what we call the electromagnetic field.
+
+The electromagnetic field can carry waves; some of these waves are light, others are used in radio broadcasts, but the general name is electromagnetic waves. These oscillatory waves can have various frequencies. The only thing that is really different from one wave to another is the frequency of oscillation. If we shake a charge back and forth more and more rapidly, and look at the effects, we get a whole series of different kinds of effects, which are all unified by specifying but one number, the number of oscillations per second. The usual “pickup” that we get from electric currents in the circuits in the walls of a building have a frequency of about one hundred cycles per second. If we increase the frequency to 500
+ or 1000
+ kilocycles (1
+ kilocycle=1000
+ cycles) per second, we are “on the air,” for this is the frequency range which is used for radio broadcasts. (Of course it has nothing to do with the air! We can have radio broadcasts without any air.) If we again increase the frequency, we come into the range that is used for FM and TV. Going still further, we use certain short waves, for example for radar. Still higher, and we do not need an instrument to “see” the stuff, we can see it with the human eye. In the range of frequency from 5×1014
+ to 1015
+ cycles per second our eyes would see the oscillation of the charged comb, if we could shake it that fast, as red, blue, or violet light, depending on the frequency. Frequencies below this range are called infrared, and above it, ultraviolet. The fact that we can see in a particular frequency range makes that part of the electromagnetic spectrum no more impressive than the other parts from a physicist’s standpoint, but from a human standpoint, of course, it is more interesting. If we go up even higher in frequency, we get x-rays. X-rays are nothing but very high-frequency light. If we go still higher, we get gamma rays. These two terms, x-rays and gamma rays, are used almost synonymously. Usually electromagnetic rays coming from nuclei are called gamma rays, while those of high energy from atoms are called x-rays, but at the same frequency they are indistinguishable physically, no matter what their source. If we go to still higher frequencies, say to 1024
+ cycles per second, we find that we can make those waves artificially, for example with the synchrotron here at Caltech. We can find electromagnetic waves with stupendously high frequencies—with even a thousand times more rapid oscillation—in the waves found in cosmic rays. These waves cannot be controlled by us.
+
+Table 2–1
+The Electromagnetic Spectrum
+Frequency
+in oscillations/sec	Name	Rough
+behavior
+102
+Electrical disturbance	Field
+5×105
+ – 106
+Radio broadcast	Waves
+108
+FM—TV
+1010
+Radar
+5×1014
+ – 1015
+Light
+1018
+X-rays	Particle
+1021
+γ
+-rays, nuclear
+1024
+γ
+-rays, “artificial”
+1027
+γ
+-rays, in cosmic rays
+2–3Quantum physics
+Having described the idea of the electromagnetic field, and that this field can carry waves, we soon learn that these waves actually behave in a strange way which seems very unwavelike. At higher frequencies they behave much more like particles! It is quantum mechanics, discovered just after 1920, which explains this strange behavior. In the years before 1920, the picture of space as a three-dimensional space, and of time as a separate thing, was changed by Einstein, first into a combination which we call space-time, and then still further into a curved space-time to represent gravitation. So the “stage” is changed into space-time, and gravitation is presumably a modification of space-time. Then it was also found that the rules for the motions of particles were incorrect. The mechanical rules of “inertia” and “forces” are wrong—Newton’s laws are wrong—in the world of atoms. Instead, it was discovered that things on a small scale behave nothing like things on a large scale. That is what makes physics difficult—and very interesting. It is hard because the way things behave on a small scale is so “unnatural”; we have no direct experience with it. Here things behave like nothing we know of, so that it is impossible to describe this behavior in any other than analytic ways. It is difficult, and takes a lot of imagination.
+
+Quantum mechanics has many aspects. In the first place, the idea that a particle has a definite location and a definite speed is no longer allowed; that is wrong. To give an example of how wrong classical physics is, there is a rule in quantum mechanics that says that one cannot know both where something is and how fast it is moving. The uncertainty of the momentum and the uncertainty of the position are complementary, and the product of the two is bounded by a small constant. We can write the law like this: ΔxΔp≥ℏ/2
+, but we shall explain it in more detail later. This rule is the explanation of a very mysterious paradox: if the atoms are made out of plus and minus charges, why don’t the minus charges simply sit on top of the plus charges (they attract each other) and get so close as to completely cancel them out? Why are atoms so big? Why is the nucleus at the center with the electrons around it? It was first thought that this was because the nucleus was so big; but no, the nucleus is very small. An atom has a diameter of about 10−8
+ cm. The nucleus has a diameter of about 10−13
+ cm. If we had an atom and wished to see the nucleus, we would have to magnify it until the whole atom was the size of a large room, and then the nucleus would be a bare speck which you could just about make out with the eye, but very nearly all the weight of the atom is in that infinitesimal nucleus. What keeps the electrons from simply falling in? This principle: If they were in the nucleus, we would know their position precisely, and the uncertainty principle would then require that they have a very large (but uncertain) momentum, i.e., a very large kinetic energy. With this energy they would break away from the nucleus. They make a compromise: they leave themselves a little room for this uncertainty and then jiggle with a certain amount of minimum motion in accordance with this rule. (Remember that when a crystal is cooled to absolute zero, we said that the atoms do not stop moving, they still jiggle. Why? If they stopped moving, we would know where they were and that they had zero motion, and that is against the uncertainty principle. We cannot know where they are and how fast they are moving, so they must be continually wiggling in there!)
+
+Another most interesting change in the ideas and philosophy of science brought about by quantum mechanics is this: it is not possible to predict exactly what will happen in any circumstance. For example, it is possible to arrange an atom which is ready to emit light, and we can measure when it has emitted light by picking up a photon particle, which we shall describe shortly. We cannot, however, predict when it is going to emit the light or, with several atoms, which one is going to. You may say that this is because there are some internal “wheels” which we have not looked at closely enough. No, there are no internal wheels; nature, as we understand it today, behaves in such a way that it is fundamentally impossible to make a precise prediction of exactly what will happen in a given experiment. This is a horrible thing; in fact, philosophers have said before that one of the fundamental requisites of science is that whenever you set up the same conditions, the same thing must happen. This is simply not true, it is not a fundamental condition of science. The fact is that the same thing does not happen, that we can find only an average, statistically, as to what happens. Nevertheless, science has not completely collapsed. Philosophers, incidentally, say a great deal about what is absolutely necessary for science, and it is always, so far as one can see, rather naive, and probably wrong. For example, some philosopher or other said it is fundamental to the scientific effort that if an experiment is performed in, say, Stockholm, and then the same experiment is done in, say, Quito, the same results must occur. That is quite false. It is not necessary for science to do that; it may be a fact of experience, but it is not necessary. For example, if one of the experiments is to look out at the sky and see the aurora borealis in Stockholm, you do not see it in Quito; that is a different phenomenon. “But,” you say, “that is something that has to do with the outside; can you close yourself up in a box in Stockholm and pull down the shade and get any difference?” Surely. If we take a pendulum on a universal joint, and pull it out and let go, then the pendulum will swing almost in a plane, but not quite. Slowly the plane keeps changing in Stockholm, but not in Quito. The blinds are down, too. The fact that this happened does not bring on the destruction of science. What is the fundamental hypothesis of science, the fundamental philosophy? We stated it in the first chapter: the sole test of the validity of any idea is experiment. If it turns out that most experiments work out the same in Quito as they do in Stockholm, then those “most experiments” will be used to formulate some general law, and those experiments which do not come out the same we will say were a result of the environment near Stockholm. We will invent some way to summarize the results of the experiment, and we do not have to be told ahead of time what this way will look like. If we are told that the same experiment will always produce the same result, that is all very well, but if when we try it, it does not, then it does not. We just have to take what we see, and then formulate all the rest of our ideas in terms of our actual experience.
+
+Returning again to quantum mechanics and fundamental physics, we cannot go into details of the quantum-mechanical principles at this time, of course, because these are rather difficult to understand. We shall assume that they are there, and go on to describe what some of the consequences are. One of the consequences is that things which we used to consider as waves also behave like particles, and particles behave like waves; in fact everything behaves the same way. There is no distinction between a wave and a particle. So quantum mechanics unifies the idea of the field and its waves, and the particles, all into one. Now it is true that when the frequency is low, the field aspect of the phenomenon is more evident, or more useful as an approximate description in terms of everyday experiences. But as the frequency increases, the particle aspects of the phenomenon become more evident with the equipment with which we usually make the measurements. In fact, although we mentioned many frequencies, no phenomenon directly involving a frequency has yet been detected above approximately 1012
+ cycles per second. We only deduce the higher frequencies from the energy of the particles, by a rule which assumes that the particle-wave idea of quantum mechanics is valid.
+
+Thus we have a new view of electromagnetic interaction. We have a new kind of particle to add to the electron, the proton, and the neutron. That new particle is called a photon. The new view of the interaction of electrons and photons that is electromagnetic theory, but with everything quantum-mechanically correct, is called quantum electrodynamics. This fundamental theory of the interaction of light and matter, or electric field and charges, is our greatest success so far in physics. In this one theory we have the basic rules for all ordinary phenomena except for gravitation and nuclear processes. For example, out of quantum electrodynamics come all known electrical, mechanical, and chemical laws: the laws for the collision of billiard balls, the motions of wires in magnetic fields, the specific heat of carbon monoxide, the color of neon signs, the density of salt, and the reactions of hydrogen and oxygen to make water are all consequences of this one law. All these details can be worked out if the situation is simple enough for us to make an approximation, which is almost never, but often we can understand more or less what is happening. At the present time no exceptions are found to the quantum-electrodynamic laws outside the nucleus, and there we do not know whether there is an exception because we simply do not know what is going on in the nucleus.
+
+In principle, then, quantum electrodynamics is the theory of all chemistry, and of life, if life is ultimately reduced to chemistry and therefore just to physics because chemistry is already reduced (the part of physics which is involved in chemistry being already known). Furthermore, the same quantum electrodynamics, this great thing, predicts a lot of new things. In the first place, it tells the properties of very high-energy photons, gamma rays, etc. It predicted another very remarkable thing: besides the electron, there should be another particle of the same mass, but of opposite charge, called a positron, and these two, coming together, could annihilate each other with the emission of light or gamma rays. (After all, light and gamma rays are all the same, they are just different points on a frequency scale.) The generalization of this, that for each particle there is an antiparticle, turns out to be true. In the case of electrons, the antiparticle has another name—it is called a positron, but for most other particles, it is called anti-so-and-so, like antiproton or antineutron. In quantum electrodynamics, two numbers are put in and most of the other numbers in the world are supposed to come out. The two numbers that are put in are called the mass of the electron and the charge of the electron. Actually, that is not quite true, for we have a whole set of numbers for chemistry which tells how heavy the nuclei are. That leads us to the next part.
+
+2–4Nuclei and particles
+What are the nuclei made of, and how are they held together? It is found that the nuclei are held together by enormous forces. When these are released, the energy released is tremendous compared with chemical energy, in the same ratio as the atomic bomb explosion is to a TNT explosion, because, of course, the atomic bomb has to do with changes inside the nucleus, while the explosion of TNT has to do with the changes of the electrons on the outside of the atoms. The question is, what are the forces which hold the protons and neutrons together in the nucleus? Just as the electrical interaction can be connected to a particle, a photon, Yukawa suggested that the forces between neutrons and protons also have a field of some kind, and that when this field jiggles it behaves like a particle. Thus there could be some other particles in the world besides protons and neutrons, and he was able to deduce the properties of these particles from the already known characteristics of nuclear forces. For example, he predicted they should have a mass of two or three hundred times that of an electron; and lo and behold, in cosmic rays there was discovered a particle of the right mass! But it later turned out to be the wrong particle. It was called a μ
+-meson, or muon.
+
+However, a little while later, in 1947 or 1948, another particle was found, the π
+-meson, or pion, which satisfied Yukawa’s criterion. Besides the proton and the neutron, then, in order to get nuclear forces we must add the pion. Now, you say, “Oh great!, with this theory we make quantum nucleodynamics using the pions just like Yukawa wanted to do, and see if it works, and everything will be explained.” Bad luck. It turns out that the calculations that are involved in this theory are so difficult that no one has ever been able to figure out what the consequences of the theory are, or to check it against experiment, and this has been going on now for almost twenty years!
+
+So we are stuck with a theory, and we do not know whether it is right or wrong, but we do know that it is a little wrong, or at least incomplete. While we have been dawdling around theoretically, trying to calculate the consequences of this theory, the experimentalists have been discovering some things. For example, they had already discovered this muon, and we do not yet know where it fits. Also, in cosmic rays, a large number of other “extra” particles were found. It turns out that today we have approximately thirty particles, and it is very difficult to understand the relationships of all these particles, and what nature wants them for, or what the connections are from one to another. We do not today understand these various particles as different aspects of the same thing, and the fact that we have so many unconnected particles is a representation of the fact that we have so much unconnected information without a good theory. After the great successes of quantum electrodynamics, there is a certain amount of knowledge of nuclear physics which is rough knowledge, sort of half experience and half theory, assuming a type of force between protons and neutrons and seeing what will happen, but not really understanding where the force comes from. Aside from that, we have made very little progress. We have collected an enormous number of chemical elements. In the chemical case, there suddenly appeared a relationship among these elements which was unexpected, and which is embodied in the periodic table of Mendeleev. For example, sodium and potassium are about the same in their chemical properties and are found in the same column in the Mendeleev chart. We have been seeking a Mendeleev-type chart for the new particles. One such chart of the new particles was made independently by Gell-Mann in the U.S.A. and Nishijima in Japan. The basis of their classification is a new number, like the electric charge, which can be assigned to each particle, called its “strangeness,” S
+. This number is conserved, like the electric charge, in reactions which take place by nuclear forces.
+
+Table 2–2
+Elementary Particles
+
+In Table 2–2 are listed all the particles. We cannot discuss them much at this stage, but the table will at least show you how much we do not know. Underneath each particle its mass is given in a certain unit, called the MeV. One MeV is equal to 1.783×10−27
+ gram. The reason this unit was chosen is historical, and we shall not go into it now. More massive particles are put higher up on the chart; we see that a neutron and a proton have almost the same mass. In vertical columns we have put the particles with the same electrical charge, all neutral objects in one column, all positively charged ones to the right of this one, and all negatively charged objects to the left.
+
+Particles are shown with a solid line and “resonances” with a dashed one. Several particles have been omitted from the table. These include the important zero-mass, zero-charge particles, the photon and the graviton, which do not fall into the baryon-meson-lepton classification scheme, and also some of the newer resonances (K∗
+, ϕ
+, η
+). The antiparticles of the mesons are listed in the table, but the antiparticles of the leptons and baryons would have to be listed in another table which would look exactly like this one reflected on the zero-charge column. Although all of the particles except the electron, neutrino, photon, graviton, and proton are unstable, decay products have been shown only for the resonances. Strangeness assignments are not applicable for leptons, since they do not interact strongly with nuclei.
+
+All particles which are together with the neutrons and protons are called baryons, and the following ones exist: There is a “lambda,” with a mass of 1115
+ MeV, and three others, called sigmas, minus, neutral, and plus, with several masses almost the same. There are groups or multiplets with almost the same mass, within one or two percent. Each particle in a multiplet has the same strangeness. The first multiplet is the proton-neutron doublet, and then there is a singlet (the lambda) then the sigma triplet, and finally the xi doublet. Very recently, in 1961, even a few more particles were found. Or are they particles? They live so short a time, they disintegrate almost instantaneously, as soon as they are formed, that we do not know whether they should be considered as new particles, or some kind of “resonance” interaction of a certain definite energy between the Λ
+ and π
+ products into which they disintegrate.
+
+In addition to the baryons the other particles which are involved in the nuclear interaction are called mesons. There are first the pions, which come in three varieties, positive, negative, and neutral; they form another multiplet. We have also found some new things called K-mesons, and they occur as a doublet, K+
+ and K0
+. Also, every particle has its antiparticle, unless a particle is its own antiparticle. For example, the π−
+ and the π+
+ are antiparticles, but the π0
+ is its own antiparticle. The K−
+ and K+
+ are antiparticles, and the K0
+ and K¯¯¯¯0
+. In addition, in 1961 we also found some more mesons or maybe mesons which disintegrate almost immediately. A thing called ω
+ which goes into three pions has a mass 780
+ on this scale, and somewhat less certain is an object which disintegrates into two pions. These particles, called mesons and baryons, and the antiparticles of the mesons are on the same chart, but the antiparticles of the baryons must be put on another chart, “reflected” through the charge-zero column.
+
+Just as Mendeleev’s chart was very good, except for the fact that there were a number of rare earth elements which were hanging out loose from it, so we have a number of things hanging out loose from this chart—particles which do not interact strongly in nuclei, have nothing to do with a nuclear interaction, and do not have a strong interaction (I mean the powerful kind of interaction of nuclear energy). These are called leptons, and they are the following: there is the electron, which has a very small mass on this scale, only 0.510
+ MeV. Then there is that other, the muon, which has a mass much higher, 206
+ times as heavy as an electron. So far as we can tell, by all experiments so far, the difference between the electron and the muon is nothing but the mass. Everything works exactly the same for the muon as for the electron, except that one is heavier than the other. Why is there another one heavier; what is the use for it? We do not know. In addition, there is a lepton which is neutral, called a neutrino, and this particle has zero mass. In fact, it is now known that there are two different kinds of neutrinos, one related to electrons and the other related to muons.
+
+Finally, we have two other particles which do not interact strongly with the nuclear ones: one is a photon, and perhaps, if the field of gravity also has a quantum-mechanical analog (a quantum theory of gravitation has not yet been worked out), then there will be a particle, a graviton, which will have zero mass.
+
+What is this “zero mass”? The masses given here are the masses of the particles at rest. The fact that a particle has zero mass means, in a way, that it cannot be at rest. A photon is never at rest, it is always moving at 186,000
+ miles a second. We will understand more what mass means when we understand the theory of relativity, which will come in due time.
+
+Thus we are confronted with a large number of particles, which together seem to be the fundamental constituents of matter. Fortunately, these particles are not all different in their interactions with one another. In fact, there seem to be just four kinds of interaction between particles which, in the order of decreasing strength, are the nuclear force, electrical interactions, the beta-decay interaction, and gravity. The photon is coupled to all charged particles and the strength of the interaction is measured by some number, which is 1/137
+. The detailed law of this coupling is known, that is quantum electrodynamics. Gravity is coupled to all energy, but its coupling is extremely weak, much weaker than that of electricity. This law is also known. Then there are the so-called weak decays—beta decay, which causes the neutron to disintegrate into proton, electron, and neutrino, relatively slowly. This law is only partly known. The so-called strong interaction, the meson-baryon interaction, has a strength of 1
+ in this scale, and the law is completely unknown, although there are a number of known rules, such as that the number of baryons does not change in any reaction.
+
+Table 2–3
+Elementary Interactions
+Coupling	Strength*	Law
+Photon to charged particles	∼10−2
+Law known
+Gravity to all energy	∼10−40
+Law known
+Weak decays	∼10−5
+Law partly known
+Mesons to baryons	∼1
+Law unknown (some rules known)
+* The “strength” is a dimensionless measure of the coupling constant involved in each interaction (∼
+ means “of the order”).
+This then, is the horrible condition of our physics today. To summarize it, I would say this: outside the nucleus, we seem to know all; inside it, quantum mechanics is valid—the principles of quantum mechanics have not been found to fail. The stage on which we put all of our knowledge, we would say, is relativistic space-time; perhaps gravity is involved in space-time. We do not know how the universe got started, and we have never made experiments which check our ideas of space and time accurately, below some tiny distance, so we only know that our ideas work above that distance. We should also add that the rules of the game are the quantum-mechanical principles, and those principles apply, so far as we can tell, to the new particles as well as to the old. The origin of the forces in nuclei leads us to new particles, but unfortunately they appear in great profusion and we lack a complete understanding of their interrelationship, although we already know that there are some very surprising relationships among them. We seem gradually to be groping toward an understanding of the world of subatomic particles, but we really do not know how far we have yet to go in this task.
+
+
+	
+	
+
+	
+	
+
+◄
+▲
+►
+A
+A
+A
+use sliding nav panel
+dark mode
+limit text width
+
+
+
+
+8
+Motion
+
+8–1Description of motion
+In order to find the laws governing the various changes that take place in bodies as time goes on, we must be able to describe the changes and have some way to record them. The simplest change to observe in a body is the apparent change in its position with time, which we call motion. Let us consider some solid object with a permanent mark, which we shall call a point, that we can observe. We shall discuss the motion of the little marker, which might be the radiator cap of an automobile or the center of a falling ball, and shall try to describe the fact that it moves and how it moves.
+
+These examples may sound trivial, but many subtleties enter into the description of change. Some changes are more difficult to describe than the motion of a point on a solid object, for example the speed of drift of a cloud that is drifting very slowly, but rapidly forming or evaporating, or the change of a woman’s mind. We do not know a simple way to analyze a change of mind, but since the cloud can be represented or described by many molecules, perhaps we can describe the motion of the cloud in principle by describing the motion of all its individual molecules. Likewise, perhaps even the changes in the mind may have a parallel in changes of the atoms inside the brain, but we have no such knowledge yet.
+
+At any rate, that is why we begin with the motion of points; perhaps we should think of them as atoms, but it is probably better to be more rough in the beginning and simply to think of some kind of small objects—small, that is, compared with the distance moved. For instance, in describing the motion of a car that is going a hundred miles, we do not have to distinguish between the front and the back of the car. To be sure, there are slight differences, but for rough purposes we say “the car,” and likewise it does not matter that our points are not absolute points; for our present purposes it is not necessary to be extremely precise. Also, while we take a first look at this subject we are going to forget about the three dimensions of the world. We shall just concentrate on moving in one direction, as in a car on one road. We shall return to three dimensions after we see how to describe motion in one dimension. Now, you may say, “This is all some kind of trivia,” and indeed it is. How can we describe such a one-dimensional motion—let us say, of a car? Nothing could be simpler. Among many possible ways, one would be the following. To determine the position of the car at different times, we measure its distance from the starting point and record all the observations. In Table 8–1, s
+ represents the distance of the car, in feet, from the starting point, and t
+ represents the time in minutes. The first line in the table represents zero distance and zero time—the car has not started yet. After one minute it has started and has gone 1200
+ feet. Then in two minutes, it goes farther—notice that it picked up more distance in the second minute—it has accelerated; but something happened between 3
+ and 4
+ and even more so at 5
+—it stopped at a light perhaps? Then it speeds up again and goes 13,000
+ feet by the end of 6
+ minutes, 18,000
+ feet at the end of 7
+ minutes, and 23,500
+ feet in 8
+ minutes; at 9
+ minutes it has advanced to only 24,000
+ feet, because in the last minute it was stopped by a cop.
+
+Table 8–1
+t
+ (min)	s
+ (ft)
+0
+0
+1
+1200
+2
+4000
+3
+9000
+4
+9500
+5
+9600
+6
+13000
+7
+18000
+8
+23500
+9
+24000
+
+Fig. 8–1.Graph of distance versus time for the car.
+That is one way to describe the motion. Another way is by means of a graph. If we plot the time horizontally and the distance vertically, we obtain a curve something like that shown in Fig. 8–1. As the time increases, the distance increases, at first very slowly and then more rapidly, and very slowly again for a little while at 4
+ minutes; then it increases again for a few minutes and finally, at 9
+ minutes, appears to have stopped increasing. These observations can be made from the graph, without a table. Obviously, for a complete description one would have to know where the car is at the half-minute marks, too, but we suppose that the graph means something, that the car has some position at all the intermediate times.
+
+Table 8–2
+t
+ (sec)	s
+ (ft)
+0
+0
+1
+16
+2
+64
+3
+144
+4
+256
+5
+400
+6
+576
+
+Fig. 8–2.Graph of distance versus time for a falling body.
+The motion of a car is complicated. For another example we take something that moves in a simpler manner, following more simple laws: a falling ball. Table 8–2 gives the time in seconds and the distance in feet for a falling body. At zero seconds the ball starts out at zero feet, and at the end of 1
+ second it has fallen 16
+ feet. At the end of 2
+ seconds, it has fallen 64
+ feet, at the end of 3
+ seconds, 144
+ feet, and so on; if the tabulated numbers are plotted, we get the nice parabolic curve shown in Fig. 8–2. The formula for this curve can be written as
+s=16t2.(8.1)
+This formula enables us to calculate the distances at any time. You might say there ought to be a formula for the first graph too. Actually, one may write such a formula abstractly, as
+s=f(t),(8.2)
+meaning that s
+ is some quantity depending on t
+ or, in mathematical phraseology, s
+ is a function of t
+. Since we do not know what the function is, there is no way we can write it in definite algebraic form.
+
+We have now seen two examples of motion, adequately described with very simple ideas, no subtleties. However, there are subtleties—several of them. In the first place, what do we mean by time and space? It turns out that these deep philosophical questions have to be analyzed very carefully in physics, and this is not so easy to do. The theory of relativity shows that our ideas of space and time are not as simple as one might think at first sight. However, for our present purposes, for the accuracy that we need at first, we need not be very careful about defining things precisely. Perhaps you say, “That’s a terrible thing—I learned that in science we have to define everything precisely.” We cannot define anything precisely! If we attempt to, we get into that paralysis of thought that comes to philosophers, who sit opposite each other, one saying to the other, “You don’t know what you are talking about!” The second one says, “What do you mean by know? What do you mean by talking? What do you mean by you?,” and so on. In order to be able to talk constructively, we just have to agree that we are talking about roughly the same thing. You know as much about time as we need for the present, but remember that there are some subtleties that have to be discussed; we shall discuss them later.
+
+Another subtlety involved, and already mentioned, is that it should be possible to imagine that the moving point we are observing is always located somewhere. (Of course when we are looking at it, there it is, but maybe when we look away it isn’t there.) It turns out that in the motion of atoms, that idea also is false—we cannot find a marker on an atom and watch it move. That subtlety we shall have to get around in quantum mechanics. But we are first going to learn what the problems are before introducing the complications, and then we shall be in a better position to make corrections, in the light of the more recent knowledge of the subject. We shall, therefore, take a simple point of view about time and space. We know what these concepts are in a rough way, and those who have driven a car know what speed means.
+
+8–2Speed
+Even though we know roughly what “speed” means, there are still some rather deep subtleties; consider that the learned Greeks were never able to adequately describe problems involving velocity. The subtlety comes when we try to comprehend exactly what is meant by “speed.” The Greeks got very confused about this, and a new branch of mathematics had to be discovered beyond the geometry and algebra of the Greeks, Arabs, and Babylonians. As an illustration of the difficulty, try to solve this problem by sheer algebra: A balloon is being inflated so that the volume of the balloon is increasing at the rate of 100
+ cm³ per second; at what speed is the radius increasing when the volume is 1000
+ cm³? The Greeks were somewhat confused by such problems, being helped, of course, by some very confusing Greeks. To show that there were difficulties in reasoning about speed at the time, Zeno produced a large number of paradoxes, of which we shall mention one to illustrate his point that there are obvious difficulties in thinking about motion. “Listen,” he says, “to the following argument: Achilles runs 10
+ times as fast as a tortoise, nevertheless he can never catch the tortoise. For, suppose that they start in a race where the tortoise is 100
+ meters ahead of Achilles; then when Achilles has run the 100
+ meters to the place where the tortoise was, the tortoise has proceeded 10
+ meters, having run one-tenth as fast. Now, Achilles has to run another 10
+ meters to catch up with the tortoise, but on arriving at the end of that run, he finds that the tortoise is still 1
+ meter ahead of him; running another meter, he finds the tortoise 10
+ centimeters ahead, and so on, ad infinitum. Therefore, at any moment the tortoise is always ahead of Achilles and Achilles can never catch up with the tortoise.” What is wrong with that? It is that a finite amount of time can be divided into an infinite number of pieces, just as a length of line can be divided into an infinite number of pieces by dividing repeatedly by two. And so, although there are an infinite number of steps (in the argument) to the point at which Achilles reaches the tortoise, it doesn’t mean that there is an infinite amount of time. We can see from this example that there are indeed some subtleties in reasoning about speed.
+
+In order to get to the subtleties in a clearer fashion, we remind you of a joke which you surely must have heard. At the point where the lady in the car is caught by a cop, the cop comes up to her and says, “Lady, you were going 60
+ miles an hour!” She says, “That’s impossible, sir, I was travelling for only seven minutes. It is ridiculous—how can I go 60
+ miles an hour when I wasn’t going an hour?” How would you answer her if you were the cop? Of course, if you were really the cop, then no subtleties are involved; it is very simple: you say, “Tell that to the judge!” But let us suppose that we do not have that escape and we make a more honest, intellectual attack on the problem, and try to explain to this lady what we mean by the idea that she was going 60
+ miles an hour. Just what do we mean? We say, “What we mean, lady, is this: if you kept on going the same way as you are going now, in the next hour you would go 60
+ miles.” She could say, “Well, my foot was off the accelerator and the car was slowing down, so if I kept on going that way it would not go 60
+ miles.” Or consider the falling ball and suppose we want to know its speed at the time three seconds if the ball kept on going the way it is going. What does that mean—kept on accelerating, going faster? No—kept on going with the same velocity. But that is what we are trying to define! For if the ball keeps on going the way it is going, it will just keep on going the way it is going. Thus we need to define the velocity better. What has to be kept the same? The lady can also argue this way: “If I kept on going the way I’m going for one more hour, I would run into that wall at the end of the street!” It is not so easy to say what we mean.
+
+Many physicists think that measurement is the only definition of anything. Obviously, then, we should use the instrument that measures the speed—the speedometer—and say, “Look, lady, your speedometer reads 60
+.” So she says, “My speedometer is broken and didn’t read at all.” Does that mean the car is standing still? We believe that there is something to measure before we build the speedometer. Only then can we say, for example, “The speedometer isn’t working right,” or “the speedometer is broken.” That would be a meaningless sentence if the velocity had no meaning independent of the speedometer. So we have in our minds, obviously, an idea that is independent of the speedometer, and the speedometer is meant only to measure this idea. So let us see if we can get a better definition of the idea. We say, “Yes, of course, before you went an hour, you would hit that wall, but if you went one second, you would go 88
+ feet; lady, you were going 88
+ feet per second, and if you kept on going, the next second it would be 88
+ feet, and the wall down there is farther away than that.” She says, “Yes, but there’s no law against going 88
+ feet per second! There is only a law against going 60
+ miles an hour.” “But,” we reply, “it’s the same thing.” If it is the same thing, it should not be necessary to go into this circumlocution about 88
+ feet per second. In fact, the falling ball could not keep going the same way even one second because it would be changing speed, and we shall have to define speed somehow.
+
+Now we seem to be getting on the right track; it goes something like this: If the lady kept on going for another 1/1000
+ of an hour, she would go 1/1000
+ of 60
+ miles. In other words, she does not have to keep on going for the whole hour; the point is that for a moment she is going at that speed. Now what that means is that if she went just a little bit more in time, the extra distance she goes would be the same as that of a car that goes at a steady speed of 60
+ miles an hour. Perhaps the idea of the 88
+ feet per second is right; we see how far she went in the last second, divide by 88
+ feet, and if it comes out 1
+ the speed was 60
+ miles an hour. In other words, we can find the speed in this way: We ask, how far do we go in a very short time? We divide that distance by the time, and that gives the speed. But the time should be made as short as possible, the shorter the better, because some change could take place during that time. If we take the time of a falling body as an hour, the idea is ridiculous. If we take it as a second, the result is pretty good for a car, because there is not much change in speed, but not for a falling body; so in order to get the speed more and more accurately, we should take a smaller and smaller time interval. What we should do is take a millionth of a second, find out how far the car has gone, and divide that distance by a millionth of a second. The result gives the distance per second, which is what we mean by the velocity, so we can define it that way. That is a successful answer for the lady, or rather, that is the definition that we are going to use.
+
+The foregoing definition involves a new idea, an idea that was not available to the Greeks in a general form. That idea was to take an infinitesimal distance and the corresponding infinitesimal time, form the ratio, and watch what happens to that ratio as the time that we use gets smaller and smaller and smaller. In other words, take a limit of the distance travelled divided by the time required, as the time taken gets smaller and smaller, ad infinitum. This idea was invented by Newton and by Leibniz, independently, and is the beginning of a new branch of mathematics, called the differential calculus. Calculus was invented in order to describe motion, and its first application was to the problem of defining what is meant by going “60
+ miles an hour.”
+
+Let us try to define velocity a little better. Suppose that in a short time, ϵ
+, the car or other body goes a short distance x
+; then the velocity, v
+, is defined as
+v=x/ϵ,
+an approximation that becomes better and better as the ϵ
+ is taken smaller and smaller. If a mathematical expression is desired, we can say that the velocity equals the limit as the ϵ
+ is made to go smaller and smaller in the expression x/ϵ
+, or
+v=limϵ→0xϵ.(8.3)
+We cannot do the same thing with the lady in the car, because the table is incomplete. We know only where she was at intervals of one minute; we can get a rough idea that she was going 5000
+ ft/min during the 7
+th minute, but we do not know, at exactly the moment 7
+ minutes, whether she had been speeding up and the speed was 4900
+ ft/min at the beginning of the 6
+th minute, and is now 5100
+ ft/min, or something else, because we do not have the exact details in between. So only if the table were completed with an infinite number of entries could we really calculate the velocity from such a table. On the other hand, when we have a complete mathematical formula, as in the case of a falling body (Eq. 8.1), then it is possible to calculate the velocity, because we can calculate the position at any time whatsoever.
+
+Let us take as an example the problem of determining the velocity of the falling ball at the particular time 5
+ seconds. One way to do this is to see from Table 8–2 what it did in the 5
+th second; it went 400−256=144
+ ft, so it is going 144
+ ft/sec; however, that is wrong, because the speed is changing; on the average it is 144
+ ft/sec during this interval, but the ball is speeding up and is really going faster than 144
+ ft/sec. We want to find out exactly how fast. The technique involved in this process is the following: We know where the ball was at 5
+ sec. At 5.1
+ sec, the distance that it has gone all together is 16(5.1)2=416.16
+ ft (see Eq. 8.1). At 5
+ sec it had already fallen 400
+ ft; in the last tenth of a second it fell 416.16−400=16.16
+ ft. Since 16.16
+ ft in 0.1
+ sec is the same as 161.6
+ ft/sec, that is the speed more or less, but it is not exactly correct. Is that the speed at 5
+, or at 5.1
+, or halfway between at 5.05
+ sec, or when is that the speed? Never mind—the problem was to find the speed at 5
+ seconds, and we do not have exactly that; we have to do a better job. So, we take one-thousandth of a second more than 5
+ sec, or 5.001
+ sec, and calculate the total fall as
+s=16(5.001)2=16(25.010001)=400.160016 ft.
+In the last 0.001
+ sec the ball fell 0.160016
+ ft, and if we divide this number by 0.001
+ sec we obtain the speed as 160.016
+ ft/sec. That is closer, very close, but it is still not exact. It should now be evident what we must do to find the speed exactly. To perform the mathematics we state the problem a little more abstractly: to find the velocity at a special time, t0
+, which in the original problem was 5
+ sec. Now the distance at t0
+, which we call s0
+, is 16t20
+, or 400
+ ft in this case. In order to find the velocity, we ask, “At the time t0+(a little bit)
+, or t0+ϵ
+, where is the body?” The new position is 16(t0+ϵ)2=16t20+32t0ϵ+16ϵ2
+. So it is farther along than it was before, because before it was only 16t20
+. This distance we shall call s0+(a little bit more)
+, or s0+x
+ (if x
+ is the extra bit). Now if we subtract the distance at t0
+ from the distance at t0+ϵ
+, we get x
+, the extra distance gone, as x=32t0⋅ϵ+16ϵ2
+. Our first approximation to the velocity is
+v=xϵ=32t0+16ϵ.(8.4)
+The true velocity is the value of this ratio, x/ϵ
+, when ϵ
+ becomes vanishingly small. In other words, after forming the ratio, we take the limit as ϵ
+ gets smaller and smaller, that is, approaches 0
+. The equation reduces to,
+v(at time t0)=32t0.
+In our problem, t0=5
+ sec, so the solution is v=
+ 32×5=
+ 160
+ ft/sec. A few lines above, where we took ϵ
+ as 0.1
+ and 0.001
+ sec successively, the value we got for v
+ was a little more than this, but now we see that the actual velocity is precisely 160
+ ft/sec.
+
+8–3Speed as a derivative
+The procedure we have just carried out is performed so often in mathematics that for convenience special notations have been assigned to our quantities ϵ
+ and x
+. In this notation, the ϵ
+ used above becomes Δt
+ and x
+ becomes Δs
+. This Δt
+ means “an extra bit of t
+,” and carries an implication that it can be made smaller. The prefix Δ
+ is not a multiplier, any more than sinθ
+ means s⋅i⋅n⋅θ
+—it simply defines a time increment, and reminds us of its special character. Δs
+ has an analogous meaning for the distance s
+. Since Δ
+ is not a factor, it cannot be cancelled in the ratio Δs/Δt
+ to give s/t
+, any more than the ratio sinθ/sin2θ
+ can be reduced to 1/2
+ by cancellation. In this notation, velocity is equal to the limit of Δs/Δt
+ when Δt
+ gets smaller, or
+v=limΔt→0ΔsΔt.(8.5)
+This is really the same as our previous expression (8.3) with ϵ
+ and x
+, but it has the advantage of showing that something is changing, and it keeps track of what is changing.
+
+Incidentally, to a good approximation we have another law, which says that the change in distance of a moving point is the velocity times the time interval, or Δs=vΔt
+. This statement is true only if the velocity is not changing during that time interval, and this condition is true only in the limit as Δt
+ goes to 0
+. Physicists like to write it ds=vdt
+, because by dt
+ they mean Δt
+ in circumstances in which it is very small; with this understanding, the expression is valid to a close approximation. If Δt
+ is too long, the velocity might change during the interval, and the approximation would become less accurate. For a time dt
+, approaching zero, ds=vdt
+ precisely. In this notation we can write (8.5) as
+v=limΔt→0ΔsΔt=dsdt.
+
+The quantity ds/dt
+ which we found above is called the “derivative of s
+ with respect to t
+” (this language helps to keep track of what was changed), and the complicated process of finding it is called finding a derivative, or differentiating. The ds
+’s and dt
+’s which appear separately are called differentials. To familiarize you with the words, we say we found the derivative of the function 16t2
+, or the derivative (with respect to t
+) of 16t2
+ is 32t
+. When we get used to the words, the ideas are more easily understood. For practice, let us find the derivative of a more complicated function. We shall consider the formula s=At3+Bt+C
+, which might describe the motion of a point. The letters A
+, B
+, and C
+ represent constant numbers, as in the familiar general form of a quadratic equation. Starting from the formula for the motion, we wish to find the velocity at any time. To find the velocity in the more elegant manner, we change t
+ to t+Δt
+ and note that s
+ is then changed to s+some Δs
+; then we find the Δs
+ in terms of Δt
+. That is to say,
+s+Δs=A(t+Δt)3+B(t+Δt)+C=At3+Bt+C+3At2Δt+BΔt+3At(Δt)2+A(Δt)3,
+but since
+s=At3+Bt+C,
+we find that
+Δs=3At2Δt+BΔt+3At(Δt)2+A(Δt)3.
+But we do not want Δs
+—we want Δs
+ divided by Δt
+. We divide the preceding equation by Δt
+, getting
+ΔsΔt=3At2+B+3At(Δt)+A(Δt)2.
+As Δt
+ goes toward 0
+ the limit of Δs/Δt
+ is ds/dt
+ and is equal to
+dsdt=3At2+B.
+This is the fundamental process of calculus, differentiating functions. The process is even more simple than it appears. Observe that when these expansions contain any term with a square or a cube or any higher power of Δt
+, such terms may be dropped at once, since they will go to 0
+ when the limit is taken. After a little practice the process gets easier because one knows what to leave out. There are many rules or formulas for differentiating various types of functions. These can be memorized, or can be found in tables. A short list is found in Table 8–3.
+
+Table 8–3
+A Short Table of Derivatives
+s
+, u
+, v
+, w
+ are arbitrary functions of t
+; a
+, b
+, c
+, and n
+ are arbitrary constants
+
+Function	Derivative
+s=tn
+dsdt=ntn−1
+s=cu
+dsdt=cdudt
+s=u+v+w+⋯
+dsdt=dudt+dvdt+dwdt+⋯
+s=c
+dsdt=0
+s=uavbwc⋯
+dsdt=s(aududt+bvdvdt+cwdwdt+⋯)
+8–4Distance as an integral
+Table 8–4
+Velocity of a Falling Ball
+t
+ (sec)	v
+ (ft/sec)
+0
+0
+1
+32
+2
+64
+3
+96
+4
+128
+Now we have to discuss the inverse problem. Suppose that instead of a table of distances, we have a table of speeds at different times, starting from zero. For the falling ball, such speeds and times are shown in Table 8–4. A similar table could be constructed for the velocity of the car, by recording the speedometer reading every minute or half-minute. If we know how fast the car is going at any time, can we determine how far it goes? This problem is just the inverse of the one solved above; we are given the velocity and asked to find the distance. How can we find the distance if we know the speed? If the speed of the car is not constant, and the lady goes sixty miles an hour for a moment, then slows down, speeds up, and so on, how can we determine how far she has gone? That is easy. We use the same idea, and express the distance in terms of infinitesimals. Let us say, “In the first second her speed was such and such, and from the formula Δs=vΔt
+ we can calculate how far the car went the first second at that speed.” Now in the next second her speed is nearly the same, but slightly different; we can calculate how far she went in the next second by taking the new speed times the time. We proceed similarly for each second, to the end of the run. We now have a number of little distances, and the total distance will be the sum of all these little pieces. That is, the distance will be the sum of the velocities times the times, or s=∑vΔt
+, where the Greek letter ∑
+ (sigma) is used to denote addition. To be more precise, it is the sum of the velocity at a certain time, let us say the i
+-th time, multiplied by Δt
+.
+s=∑iv(ti)Δt.(8.6)
+The rule for the times is that ti+1=ti+Δt
+. However, the distance we obtain by this method will not be correct, because the velocity changes during the time interval Δt
+. If we take the times short enough, the sum is precise, so we take them smaller and smaller until we obtain the desired accuracy. The true s
+ is
+s=limΔt→0∑iv(ti)Δt.(8.7)
+The mathematicians have invented a symbol for this limit, analogous to the symbol for the differential. The Δ
+ turns into a d
+ to remind us that the time is as small as it can be; the velocity is then called v
+ at the time t
+, and the addition is written as a sum with a great “s
+,” ∫
+ (from the Latin summa), which has become distorted and is now unfortunately just called an integral sign. Thus we write
+s=∫v(t)dt.(8.8)
+This process of adding all these terms together is called integration, and it is the opposite process to differentiation. The derivative of this integral is v
+, so one operator (d
+) undoes the other (∫
+). One can get formulas for integrals by taking the formulas for derivatives and running them backwards, because they are related to each other inversely. Thus one can work out his own table of integrals by differentiating all sorts of functions. For every formula with a differential, we get an integral formula if we turn it around.
+
+Every function can be differentiated analytically, i.e., the process can be carried out algebraically, and leads to a definite function. But it is not possible in a simple manner to write an analytical value for any integral at will. You can calculate it, for instance, by doing the above sum, and then doing it again with a finer interval Δt
+ and again with a finer interval until you have it nearly right. In general, given some particular function, it is not possible to find, analytically, what the integral is. One may always try to find a function which, when differentiated, gives some desired function; but one may not find it, and it may not exist, in the sense of being expressible in terms of functions that have already been given names.
+
+8–5Acceleration
+The next step in developing the equations of motion is to introduce another idea which goes beyond the concept of velocity to that of change of velocity, and we now ask, “How does the velocity change?” In previous chapters we have discussed cases in which forces produce changes in velocity. You may have heard with great excitement about some car that can get from rest to 60
+ miles an hour in ten seconds flat. From such a performance we can see how fast the speed changes, but only on the average. What we shall now discuss is the next level of complexity, which is how fast the velocity is changing. In other words, by how many feet per second does the velocity change in a second, that is, how many feet per second, per second? We previously derived the formula for the velocity of a falling body as v=32t
+, which is charted in Table 8–4, and now we want to find out how much the velocity changes per second; this quantity is called the acceleration.
+
+Acceleration is defined as the time rate of change of velocity. From the preceding discussion we know enough already to write the acceleration as the derivative dv/dt
+, in the same way that the velocity is the derivative of the distance. If we now differentiate the formula v=32t
+ we obtain, for a falling body,
+a=dvdt=32.(8.9)
+[To differentiate the term 32t
+ we can utilize the result obtained in a previous problem, where we found that the derivative of Bt
+ is simply B
+ (a constant). So by letting B=32
+, we have at once that the derivative of 32t
+ is 32
+.] This means that the velocity of a falling body is changing by 32
+ feet per second, per second always. We also see from Table 8–4 that the velocity increases by 32
+ ft/sec in each second. This is a very simple case, for accelerations are usually not constant. The reason the acceleration is constant here is that the force on the falling body is constant, and Newton’s law says that the acceleration is proportional to the force.
+
+As a further example, let us find the acceleration in the problem we have already solved for the velocity. Starting with
+s=At3+Bt+C
+we obtained, for v=ds/dt
+,
+v=3At2+B.
+Since acceleration is the derivative of the velocity with respect to the time, we need to differentiate the last expression above. Recall the rule that the derivative of the two terms on the right equals the sum of the derivatives of the individual terms. To differentiate the first of these terms, instead of going through the fundamental process again we note that we have already differentiated a quadratic term when we differentiated 16t2
+, and the effect was to double the numerical coefficient and change the t2
+ to t
+; let us assume that the same thing will happen this time, and you can check the result yourself. The derivative of 3At2
+ will then be 6At
+. Next we differentiate B
+, a constant term; but by a rule stated previously, the derivative of B
+ is zero; hence this term contributes nothing to the acceleration. The final result, therefore, is a=
+ dv/dt=
+ 6At
+.
+
+For reference, we state two very useful formulas, which can be obtained by integration. If a body starts from rest and moves with a constant acceleration, g
+, its velocity v
+ at any time t
+ is given by
+v=gt.
+The distance it covers in the same time is
+s=12gt2.
+
+Various mathematical notations are used in writing derivatives. Since velocity is ds/dt
+ and acceleration is the time derivative of the velocity, we can also write
+a=ddt(dsdt)=d2sdt2,(8.10)
+which are common ways of writing a second derivative.
+
+We have another law that the velocity is equal to the integral of the acceleration. This is just the opposite of a=dv/dt
+; we have already seen that distance is the integral of the velocity, so distance can be found by twice integrating the acceleration.
+
+In the foregoing discussion the motion was in only one dimension, and space permits only a brief discussion of motion in three dimensions. Consider a particle P
+ which moves in three dimensions in any manner whatsoever. At the beginning of this chapter, we opened our discussion of the one-dimensional case of a moving car by observing the distance of the car from its starting point at various times. We then discussed velocity in terms of changes of these distances with time, and acceleration in terms of changes in velocity. We can treat three-dimensional motion analogously. It will be simpler to illustrate the motion on a two-dimensional diagram, and then extend the ideas to three dimensions. We establish a pair of axes at right angles to each other, and determine the position of the particle at any moment by measuring how far it is from each of the two axes. Thus each position is given in terms of an x
+-distance and a y
+-distance, and the motion can be described by constructing a table in which both these distances are given as functions of time. (Extension of this process to three dimensions requires only another axis, at right angles to the first two, and measuring a third distance, the z
+-distance. The distances are now measured from coordinate planes instead of lines.) Having constructed a table with x
+- and y
+-distances, how can we determine the velocity? We first find the components of velocity in each direction. The horizontal part of the velocity, or x
+-component, is the derivative of the x
+-distance with respect to the time, or
+vx=dx/dt.(8.11)
+Similarly, the vertical part of the velocity, or y
+-component, is
+vy=dy/dt.(8.12)
+In the third dimension,
+vz=dz/dt.(8.13)
+
+Now, given the components of velocity, how can we find the velocity along the actual path of motion? In the two-dimensional case, consider two successive positions of the particle, separated by a short distance Δs
+ and a short time interval t2−t1=Δt
+. In the time Δt
+ the particle moves horizontally a distance Δx≈vxΔt
+, and vertically a distance Δy≈vyΔt
+. (The symbol “≈
+” is read “is approximately.”) The actual distance moved is approximately
+Δs≈(Δx)2+(Δy)2−−−−−−−−−−−−√,(8.14)
+as shown in Fig. 8–3. The approximate velocity during this interval can be obtained by dividing by Δt
+ and by letting Δt
+ go to 0
+, as at the beginning of the chapter. We then get the velocity as
+v=dsdt=(dx/dt)2+(dy/dt)2−−−−−−−−−−−−−−−−√=v2x+v2y−−−−−−√.(8.15)
+For three dimensions the result is
+v=v2x+v2y+v2z−−−−−−−−−−√.(8.16)
+
+In the same way as we defined velocities, we can define accelerations: we have an x
+-component of acceleration ax
+, which is the derivative of vx
+, the x
+-component of the velocity (that is, ax=d2x/dt2
+, the second derivative of x
+ with respect to t
+), and so on.
+
+
+Fig. 8–3.Description of the motion of a body in two dimensions and the computation of its velocity.
+Let us consider one nice example of compound motion in a plane. We shall take a motion in which a ball moves horizontally with a constant velocity u
+, and at the same time goes vertically downward with a constant acceleration −g
+; what is the motion? We can say dx/dt=
+ vx=
+ u
+. Since the velocity vx
+ is constant,
+x=ut,(8.17)
+and since the downward acceleration −g
+ is constant, the distance y
+ the object falls can be written as
+y=−12gt2.(8.18)
+What is the curve of its path, i.e., what is the relation between y
+ and x
+? We can eliminate t
+ from Eq. (8.18), since t=x/u
+. When we make this substitution we find that
+y=−g2u2x2.(8.19)
+This relation between y
+ and x
+ may be considered as the equation of the path of the moving ball. When this equation is plotted we obtain a curve that is called a parabola; any freely falling body that is shot out in any direction will travel in a parabola, as shown in Fig. 8–4.
+
+
+Fig. 8–4.The parabola described by a falling body with an initial horizontal velocity.

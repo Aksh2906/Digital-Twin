@@ -1,0 +1,15 @@
+streamlit
+python-dotenv
+langchain
+langchain-community
+langchain-core
+langchain-google-genai
+langchain-groq
+langchain-experimental
+chromadb
+sentence-transformers
+scikit-learn
+umap-learn
+plotly
+pandas
+numpy

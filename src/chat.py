@@ -12,7 +12,7 @@ import time
 
 load_dotenv()
 
-embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+embeddings = HuggingFaceEmbeddings(model_name="BAAI/bge-small-en-v1.5")
 # db = Chroma(persist_directory="chroma_db", embedding_function=embeddings)
 db = Chroma(persist_directory="chroma_db_2", embedding_function=embeddings)
 retriever = db.as_retriever(search_type="mmr", search_kwargs={"k": 4})
@@ -71,13 +71,16 @@ def chat(question):
 print("Feynman Digital Twin ready! Type 'quit' to exit.\n")
 print("=" * 50)
 
-while True:
-    user_input = input("\nYou: ").strip()
-    startTime = time.time()
-    if user_input.lower() in ["quit", "exit"]:
-        break
-    if not user_input:
-        continue
-    print(f"\nFeynman: {chat(user_input)}")
-    endTime = time.time()
-    print(f"Full Response time: {endTime - startTime:.2f} seconds")
+from src.voice import voice_loop
+
+mode = input("Mode? (text/voice): ").strip().lower()
+if mode == "voice":
+    voice_loop(chat)
+else:
+    while True:
+        user_input = input("\nYou: ").strip()
+        if user_input.lower() in ["quit", "exit"]:
+            break
+        if not user_input:
+            continue
+        print(f"\nFeynman: {chat(user_input)}")

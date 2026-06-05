@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>The Feynman Archive | Digital Researcher</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Geist:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "surface-tint":"#c8c6c3","primary":"#ffffff","background":"#131313",
+                "secondary":"#ffb77b","on-surface-variant":"#c6c7c0",
+                "surface-variant":"#353534","surface-bright":"#393939",
+                "on-surface":"#e5e2e1","surface-container-lowest":"#0e0e0e",
+                "surface-container-low":"#1c1b1b","surface":"#131313",
+                "outline-variant":"#454742","outline":"#90918b",
+                "surface-container-high":"#2a2a2a","secondary-container":"#7a4100",
+                "on-secondary-container":"#ffb270","surface-container":"#201f1f",
+                "error":"#ffb4ab"
+              },
+              spacing: {
+                "panel-inspector":"320px","gutter":"24px","panel-sidebar":"280px"
+              },
+              fontFamily: {
+                "headline-lg":["Playfair Display"],"label-md":["Geist"],
+                "body-lg":["Source Serif 4"],"body-md":["Source Serif 4"],
+                "ui-control":["Geist"],"display-lg":["Playfair Display"]
+              }
+            }
+          }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .glass-panel { background: rgba(26,30,35,0.6); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        .paper-grain { position: relative; }
+        .paper-grain::before { content:""; position:absolute; inset:0; opacity:0.03; pointer-events:none; background-image:url("https://www.transparenttextures.com/patterns/stardust.png"); }
+        .notebook-line { background-image: linear-gradient(to bottom, transparent 31px, rgba(144,145,139,0.1) 32px); background-size: 100% 32px; }
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(144,145,139,0.2); border-radius: 10px; }
+        #particle-canvas { position:fixed; top:0; left:0; width:100%; height:100%; z-index:0; pointer-events:none; opacity:0.4; }
+        .source-card { transition: all 0.3s cubic-bezier(0.4,0,0.2,1); }
+        .source-card:hover { transform: translateX(4px); background-color: rgba(53,53,52,0.8); border-left-color: #ffb77b; }
+        .manuscript-shimmer { position:relative; overflow:hidden; }
+        .manuscript-shimmer::after { content:""; position:absolute; inset:0; background:linear-gradient(45deg,transparent 25%,rgba(255,255,255,0.02) 50%,transparent 75%); background-size:200% 200%; animation:shimmer 8s linear infinite; pointer-events:none; }
+        @keyframes shimmer { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
+        @keyframes fadeUp { from{opacity:0;transform:translateY(12px)} to{opacity:1;transform:translateY(0)} }
+        .fade-up { animation: fadeUp 0.4s ease-out forwards; }
+        @keyframes breathe { 0%,100%{box-shadow:0 0 15px rgba(255,183,123,0.2)} 50%{box-shadow:0 0 40px rgba(255,183,123,0.4)} }
+        .session-item { transition: all 0.2s ease; }
+        .session-item:hover { background: rgba(53,53,52,0.5); }
+    </style>
+</head>
+<body class="bg-background text-on-surface overflow-hidden">
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+const { useState, useEffect, useRef, useCallback } = React;
+const { createRoot } = ReactDOM;
+
+const App = () => {
+    const [page, setPage] = useState('dashboard');
+    const [sessions, setSessions] = useState([]);
+    const [activeSession, setActiveSession] = useState(null);
+    const [messages, setMessages] = useState([]);
+    const [sources, setSources] = useState([]);
+    const [metrics, setMetrics] = useState(null);
+    const [loading, setLoading] = useState(false);
+    const [ttsEnabled, setTtsEnabled] = useState(false);
+    const [profile, setProfile] = useState({name:'', interests:[], common_topics:{}, interaction_count:0, behavior_notes:[]});
+    const [sidebarTab, setSidebarTab] = useState('chats');
+    const canvasRef = useRef(null);
+    const globalAudioRef = useRef(null);
+    const playedAudioIds = useRef(new Set());
+
+    const stopAudio = () => {
+        if (globalAudioRef.current) {
+            globalAudioRef.current.pause();
+            globalAudioRef.current.currentTime = 0;
+            globalAudioRef.current.src = '';
+        }
+    };
+
+    useEffect(() => {
+        fetch('/api/sessions').then(r=>r.json()).then(data => {
+            setSessions(data.sessions || []);
+            if (data.active) setActiveSession(data.active);
+        });
+        fetch('/api/profile').then(r=>r.json()).then(setProfile);
+    }, []);
+
+    useEffect(() => {
+        const canvas = canvasRef.current;
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        const resize = () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; };
+        window.addEventListener('resize', resize);
+        resize();
+        class Particle {
+            constructor(){this.reset()}
+            reset(){this.x=Math.random()*canvas.width;this.y=Math.random()*canvas.height;this.size=Math.random()*1.5+0.5;this.speedX=(Math.random()-0.5)*0.2;this.speedY=(Math.random()-0.5)*0.2;this.opacity=Math.random()*0.5+0.2}
+            update(){this.x+=this.speedX;this.y+=this.speedY;if(this.x<0||this.x>canvas.width||this.y<0||this.y>canvas.height)this.reset()}
+            draw(){ctx.fillStyle=`rgba(255,183,123,${this.opacity})`;ctx.beginPath();ctx.arc(this.x,this.y,this.size,0,Math.PI*2);ctx.fill()}
+        }
+        for(let i=0;i<80;i++) particles.push(new Particle());
+        let raf;
+        const animate=()=>{ctx.clearRect(0,0,canvas.width,canvas.height);particles.forEach(p=>{p.update();p.draw()});raf=requestAnimationFrame(animate)};
+        animate();
+        return ()=>{window.removeEventListener('resize',resize);cancelAnimationFrame(raf)};
+    }, []);
+
+    const loadSession = async (sid) => {
+        stopAudio();
+        setActiveSession(sid);
+        setPage('inquiry');
+        const res = await fetch(`/api/sessions/${sid}`);
+        const data = await res.json();
+        const msgs = [];
+        for (let i=0; i<data.messages.length; i+=2) {
+            if (data.messages[i] && data.messages[i+1]) {
+                const msgId = sid + '_' + i;
+                msgs.push({role:'user', content:data.messages[i].content});
+                msgs.push({role:'ai', content:data.messages[i+1].content, sources:[], id:msgId});
+                playedAudioIds.current.add(msgId);
+            }
+        }
+        setMessages(msgs);
+        setSources([]);
+        setMetrics(null);
+    };
+
+    const newSession = async (initialPrompt) => {
+        stopAudio();
+        const res = await fetch('/api/sessions/new', {method:'POST'});
+        const session = await res.json();
+        setSessions(prev => [session, ...prev]);
+        setActiveSession(session.id);
+        setMessages([]);
+        setSources([]);
+        setMetrics(null);
+        setPage('inquiry');
+        if (initialPrompt) {
+            setTimeout(() => sendMessage(initialPrompt, session.id), 100);
+        }
+    };
+
+    const deleteSession = async (sid) => {
+        await fetch(`/api/sessions/${sid}`, {method:'DELETE'});
+        setSessions(prev => prev.filter(s => s.id !== sid));
+        if (activeSession === sid) {
+            setMessages([]);
+            setActiveSession(null);
+            setPage('dashboard');
+        }
+    };
+
+    const sendMessage = async (text, overrideSid) => {
+        const sid = overrideSid || activeSession;
+        if (!text || !sid) return;
+        stopAudio();
+        setMessages(prev => [...prev, {role:'user', content:text}]);
+        setLoading(true);
+        try {
+            const res = await fetch(`/api/sessions/${sid}/chat`, {
+                method:'POST',
+                headers:{'Content-Type':'application/json'},
+                body: JSON.stringify({question:text, tts:ttsEnabled})
+            });
+            const data = await res.json();
+            const msgId = sid + '_' + Date.now();
+            setMessages(prev => [...prev, {role:'ai', content:data.answer, sources:data.sources, audioData:data.audio, id:msgId}]);
+            setSources(data.sources || []);
+            setMetrics(data.metrics);
+            if (data.audio && !playedAudioIds.current.has(msgId)) {
+                playedAudioIds.current.add(msgId);
+                if (!globalAudioRef.current) globalAudioRef.current = new Audio();
+                globalAudioRef.current.src = `data:audio/mp3;base64,${data.audio}`;
+                globalAudioRef.current.play().catch(()=>{});
+            }
+            setSessions(prev => {
+                const updated = [...prev];
+                const idx = updated.findIndex(s => s.id === sid);
+                if (idx > -1) {
+                    updated[idx] = {...updated[idx], title: updated[idx].title === 'New Inquiry' ? text.slice(0,50) : updated[idx].title, updated_at: new Date().toISOString()};
+                    const [item] = updated.splice(idx, 1);
+                    updated.unshift(item);
+                }
+                return updated;
+            });
+            fetch('/api/profile').then(r=>r.json()).then(setProfile);
+        } catch(e) {
+            setMessages(prev => [...prev, {role:'ai', content:'Something went wrong. Please try again.'}]);
+        }
+        setLoading(false);
+    };
+
+    const saveProfile = async (updates) => {
+        const res = await fetch('/api/profile', {
+            method:'POST',
+            headers:{'Content-Type':'application/json'},
+            body: JSON.stringify(updates)
+        });
+        const data = await res.json();
+        setProfile(data);
+    };
+
+    // ── Sidebar ──
+    const Sidebar = () => (
+        <aside className="fixed left-0 top-0 h-screen w-panel-sidebar border-r border-outline-variant/30 bg-surface-container-low/90 backdrop-blur-md z-20 flex flex-col py-6 px-4">
+            <div className="flex items-center gap-3 mb-6 px-4">
+                <div className="w-10 h-10 rounded-full overflow-hidden border border-outline/20">
+                    <img alt="Logo" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHvaSrTUq-vJGjTdiBjdWwWwkalH9-sY9rE4aN4yKdb7sxIsc6ihcIDby5Q2ZfkumTG1KKLlzNz_pNfZEDklx0yVF5_q6IvxHW7F0-Oy5JMpXi6L0hHNVXX1y1-MSSmL7HYLQ6dZGENs3Ds1LocADiAPa5eapDaywPZBsf3CqYEpy1h5NQHaNoZkheVEwNZ9hazbnQWKwji4BnwZ85t4E_UYkf0d9e4YoKivaNBoZBqfIKeO1r-ElXYdiw2p7rMCxrzb1rZnHnrV6P"/>
+                </div>
+                <div>
+                    <h1 className="font-headline-lg text-[18px] font-semibold text-primary">The Feynman Lab</h1>
+                    <p className="font-label-md text-[10px] text-on-surface-variant uppercase tracking-widest">Digital Researcher</p>
+                </div>
+            </div>
+
+            <div className="flex mx-4 mb-4 bg-surface-container rounded-lg p-1">
+                <button onClick={()=>setSidebarTab('chats')} className={`flex-1 py-1.5 text-xs font-ui-control rounded transition-colors ${sidebarTab==='chats'?'bg-surface-variant text-primary':'text-on-surface-variant'}`}>Chats</button>
+                <button onClick={()=>{setSidebarTab('settings');fetch('/api/profile').then(r=>r.json()).then(setProfile)}} className={`flex-1 py-1.5 text-xs font-ui-control rounded transition-colors ${sidebarTab==='settings'?'bg-surface-variant text-primary':'text-on-surface-variant'}`}>Settings</button>
+            </div>
+
+            {sidebarTab === 'chats' ? (
+                <div className="flex-1 overflow-y-auto custom-scrollbar space-y-1 px-2">
+                    {sessions.length === 0 && (
+                        <div className="text-center py-10 text-on-surface-variant/50">
+                            <span className="material-symbols-outlined text-2xl mb-2 block">forum</span>
+                            <p className="text-xs">No conversations yet</p>
+                        </div>
+                    )}
+                    {sessions.map(s => (
+                        <div key={s.id} onClick={()=>loadSession(s.id)}
+                            className={`session-item flex items-center gap-3 py-2.5 px-3 rounded-lg cursor-pointer group ${activeSession===s.id?'bg-surface-variant/60 border-l-2 border-secondary':'hover:bg-surface-variant/30'}`}>
+                            <span className="material-symbols-outlined text-sm text-on-surface-variant">chat_bubble</span>
+                            <div className="flex-1 min-w-0">
+                                <p className="text-xs text-on-surface truncate">{s.title || 'New Inquiry'}</p>
+                                <p className="text-[10px] text-on-surface-variant/50">{new Date(s.updated_at || s.created_at).toLocaleDateString()}</p>
+                            </div>
+                            <button onClick={(e)=>{e.stopPropagation();deleteSession(s.id)}} className="opacity-0 group-hover:opacity-100 text-on-surface-variant hover:text-error transition-all">
+                                <span className="material-symbols-outlined text-sm">close</span>
+                            </button>
+                        </div>
+                    ))}
+                </div>
+            ) : (
+                <SettingsPanel profile={profile} saveProfile={saveProfile} />
+            )}
+
+            <button onClick={()=>newSession()} className="mx-4 mt-4 py-3 border border-secondary text-secondary font-ui-control rounded-lg hover:bg-secondary/10 transition-all flex items-center justify-center gap-2">
+                <span className="material-symbols-outlined text-sm">add</span>
+                New Inquiry
+            </button>
+        </aside>
+    );
+
+    // ── Settings Panel ──
+    const SettingsPanel = ({profile, saveProfile}) => {
+        const [name, setName] = useState(profile.name || '');
+        const [interests, setInterests] = useState((profile.interests||[]).join(', '));
+        const [note, setNote] = useState('');
+
+        return (
+            <div className="flex-1 overflow-y-auto custom-scrollbar px-3 space-y-6">
+                <div>
+                    <label className="font-label-md text-[10px] text-on-surface-variant uppercase tracking-widest block mb-2">Your Name</label>
+                    <input value={name} onChange={e=>setName(e.target.value)}
+                        onBlur={()=>saveProfile({name})}
+                        className="w-full bg-surface-container border border-outline-variant/30 rounded-lg px-3 py-2 text-sm text-on-surface outline-none focus:border-secondary/50" placeholder="Enter your name"/>
+                </div>
+                <div>
+                    <label className="font-label-md text-[10px] text-on-surface-variant uppercase tracking-widest block mb-2">Interests (comma separated)</label>
+                    <input value={interests} onChange={e=>setInterests(e.target.value)}
+                        onBlur={()=>saveProfile({interests: interests.split(',').map(s=>s.trim()).filter(Boolean)})}
+                        className="w-full bg-surface-container border border-outline-variant/30 rounded-lg px-3 py-2 text-sm text-on-surface outline-none focus:border-secondary/50" placeholder="quantum physics, teaching..."/>
+                </div>
+                <div>
+                    <label className="font-label-md text-[10px] text-on-surface-variant uppercase tracking-widest block mb-2">Add Behavior Note</label>
+                    <div className="flex gap-2">
+                        <input value={note} onChange={e=>setNote(e.target.value)}
+                            className="flex-1 bg-surface-container border border-outline-variant/30 rounded-lg px-3 py-2 text-sm text-on-surface outline-none focus:border-secondary/50" placeholder="e.g. Prefers simple analogies"/>
+                        <button onClick={()=>{if(note.trim()){saveProfile({behavior_notes:[...(profile.behavior_notes||[]),note.trim()]});setNote('')}}}
+                            className="px-3 bg-secondary-container text-secondary rounded-lg text-sm hover:opacity-80">+</button>
+                    </div>
+                    {(profile.behavior_notes||[]).length > 0 && (
+                        <div className="mt-3 space-y-1">
+                            {(profile.behavior_notes||[]).map((n,i) => (
+                                <div key={i} className="flex items-center gap-2 text-xs text-on-surface-variant bg-surface-container/50 rounded px-2 py-1">
+                                    <span className="flex-1">{n}</span>
+                                    <button onClick={()=>saveProfile({behavior_notes:(profile.behavior_notes||[]).filter((_,j)=>j!==i)})} className="text-on-surface-variant hover:text-error">
+                                        <span className="material-symbols-outlined text-xs">close</span>
+                                    </button>
+                                </div>
+                            ))}
+                        </div>
+                    )}
+                </div>
+                <div>
+                    <label className="font-label-md text-[10px] text-on-surface-variant uppercase tracking-widest block mb-2">Stats</label>
+                    <div className="bg-surface-container border border-outline-variant/20 rounded-lg p-3 space-y-2 text-xs text-on-surface-variant">
+                        <div className="flex justify-between"><span>Interactions</span><span className="text-secondary">{profile.interaction_count||0}</span></div>
+                        {Object.keys(profile.common_topics||{}).length > 0 && (
+                            <div>
+                                <span className="block mb-1">Top Topics</span>
+                                <div className="flex flex-wrap gap-1">
+                                    {Object.entries(profile.common_topics||{}).sort((a,b)=>b[1]-a[1]).slice(0,8).map(([topic,count])=>(
+                                        <span key={topic} className="bg-secondary/10 text-secondary px-2 py-0.5 rounded text-[10px]">{topic} ({count})</span>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                </div>
+            </div>
+        );
+    };
+
+    // ── Inspector Panel ──
+    const InspectorPanel = () => {
+        const numSources = sources.length;
+        const confidence = numSources > 0 ? Math.min(95, 70 + numSources * 6) : 0;
+        const circumference = 364.4;
+        const dashOffset = circumference - (circumference * confidence / 100);
+
+        return (
+            <aside className="w-panel-inspector border-l border-outline-variant/30 bg-surface-container-low/90 backdrop-blur-md hidden xl:flex flex-col p-6 overflow-y-auto custom-scrollbar">
+                <div className="space-y-8">
+                    <section>
+                        <h3 className="font-label-md text-on-surface-variant uppercase tracking-widest text-[11px] mb-4">Archive Confidence</h3>
+                        <div className="flex flex-col items-center">
+                            <div className="relative w-28 h-28 flex items-center justify-center">
+                                <svg className="w-full h-full -rotate-90">
+                                    <circle className="text-surface-variant" cx="56" cy="56" fill="transparent" r="50" stroke="currentColor" strokeWidth="4"/>
+                                    <circle className="text-secondary transition-all duration-1000" cx="56" cy="56" fill="transparent" r="50" stroke="currentColor" strokeDasharray={circumference} strokeDashoffset={dashOffset} strokeWidth="4"/>
+                                </svg>
+                                <div className="absolute inset-0 flex flex-col items-center justify-center">
+                                    <span className="font-headline-lg text-xl text-primary">{confidence}%</span>
+                                    <span className="font-label-md text-[8px] text-on-surface-variant">ALIGNMENT</span>
+                                </div>
+                            </div>
+                            <p className="mt-3 text-center font-ui-control text-[11px] text-on-surface-variant">
+                                {numSources > 0 ? `From ${numSources} manuscripts` : 'Ask a question to begin'}
+                            </p>
+                        </div>
+                    </section>
+
+                    {sources.length > 0 && (
+                    <section>
+                        <h3 className="font-label-md text-on-surface-variant uppercase tracking-widest text-[11px] mb-3">Sources</h3>
+                        <ul className="space-y-2">
+                            {sources.map((src,i) => (
+                                <li key={i} className={`source-card p-2.5 rounded-lg border-l-2 flex gap-2 items-start cursor-pointer ${i===0?'bg-surface-container-high border-secondary/50':'bg-surface-container-high/30 border-outline-variant/30 opacity-70'}`}>
+                                    <span className={`material-symbols-outlined text-xs mt-0.5 ${i===0?'text-secondary':'text-on-surface-variant'}`}>menu_book</span>
+                                    <div className="min-w-0">
+                                        <p className="font-ui-control text-[11px] text-on-surface font-semibold truncate">{src.title}</p>
+                                        <p className="font-label-md text-[9px] text-on-surface-variant mt-0.5 line-clamp-2">{src.preview}</p>
+                                    </div>
+                                </li>
+                            ))}
+                        </ul>
+                    </section>
+                    )}
+
+                    {metrics && (
+                    <section>
+                        <h3 className="font-label-md text-on-surface-variant uppercase tracking-widest text-[11px] mb-3">Pipeline</h3>
+                        <div className="space-y-1.5 font-ui-control text-[11px]">
+                            <div className="flex justify-between text-on-surface-variant"><span>Refine</span><span className="text-secondary">{metrics.refine_ms}ms</span></div>
+                            <div className="flex justify-between text-on-surface-variant"><span>Retrieve</span><span className="text-secondary">{metrics.retrieval_ms}ms</span></div>
+                            <div className="flex justify-between text-on-surface-variant"><span>Generate</span><span className="text-secondary">{metrics.llm_ms}ms</span></div>
+                            <div className="flex justify-between text-on-surface font-semibold border-t border-outline-variant/20 pt-1.5 mt-1.5"><span>Total</span><span className="text-secondary">{metrics.total_ms}ms</span></div>
+                        </div>
+                    </section>
+                    )}
+
+                    <section>
+                        <h3 className="font-label-md text-on-surface-variant uppercase tracking-widest text-[11px] mb-3">Voice</h3>
+                        <label className="flex items-center gap-3 cursor-pointer">
+                            <div className={`w-10 h-5 rounded-full relative transition-colors ${ttsEnabled?'bg-secondary':'bg-surface-variant'}`} onClick={()=>setTtsEnabled(!ttsEnabled)}>
+                                <div className={`w-3.5 h-3.5 bg-white rounded-full absolute top-[3px] transition-transform ${ttsEnabled?'translate-x-[22px]':'translate-x-1'}`}/>
+                            </div>
+                            <span className="font-ui-control text-[11px] text-on-surface-variant">Feynman Voice</span>
+                        </label>
+                    </section>
+                </div>
+            </aside>
+        );
+    };
+
+    // ── Message Components ──
+    const UserMessage = ({content}) => (
+        <div className="relative group fade-up">
+            <div className="absolute -left-6 top-0 h-full w-[2px] bg-secondary/40"/>
+            <div className="paper-grain bg-surface-container-low p-6 rounded-xl shadow-sm border border-outline-variant/10 notebook-line">
+                <span className="font-label-md text-secondary block mb-1.5 uppercase tracking-tighter opacity-70 text-[10px]">Researcher's Note</span>
+                <p className="font-ui-control text-lg text-on-surface/90 leading-relaxed italic">"{content}"</p>
+            </div>
+        </div>
+    );
+
+    const AssistantMessage = ({content, msgSources}) => (
+        <div className="space-y-4 fade-up">
+            <div className="flex items-center gap-2">
+                <div className="w-8 h-8 flex items-center justify-center bg-secondary-container rounded-full">
+                    <span className="material-symbols-outlined text-sm" style={{fontVariationSettings:"'FILL' 1"}}>auto_stories</span>
+                </div>
+                <span className="font-headline-lg text-base text-primary">Archival Response</span>
+            </div>
+            <div className="bg-surface-container-high/40 p-8 rounded-2xl border border-outline-variant/10 shadow-xl relative overflow-hidden backdrop-blur-sm">
+                <div className="absolute left-0 top-0 bottom-0 w-1 bg-secondary"/>
+                <div className="font-body-lg text-on-surface leading-relaxed whitespace-pre-wrap">{content}</div>
+                {msgSources && msgSources.length > 0 && (
+                    <div className="mt-6 pt-4 border-t border-outline-variant/20">
+                        <details className="group cursor-pointer">
+                            <summary className="flex items-center justify-between font-label-md text-secondary/80 hover:text-secondary transition-colors list-none text-xs">
+                                <div className="flex items-center gap-1.5">
+                                    <span className="material-symbols-outlined text-xs">link</span>
+                                    {msgSources.length} source{msgSources.length>1?'s':''}
+                                </div>
+                                <span className="material-symbols-outlined text-sm group-open:rotate-180 transition-transform">expand_more</span>
+                            </summary>
+                            <div className="mt-3 space-y-1.5">
+                                {msgSources.map((s,i) => (
+                                    <div key={i} className="p-2 bg-background/50 rounded text-[11px] font-body-md text-on-surface-variant border-l border-outline-variant">
+                                        <span className="font-semibold text-on-surface">{s.title}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </details>
+                    </div>
+                )}
+            </div>
+        </div>
+    );
+
+    // ── Dashboard ──
+    const Dashboard = () => (
+        <main className="ml-panel-sidebar flex-1 relative flex flex-col items-center justify-center min-h-screen px-20">
+            <section className="max-w-3xl w-full text-center flex flex-col items-center">
+                <div className="w-56 h-56 mb-6 rounded-full border border-outline-variant/20 overflow-hidden bg-surface-container-high relative">
+                    <img alt="Feynman" className="w-full h-full object-cover grayscale brightness-75 contrast-125 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmfBdVy8if0u-hvie013pG0ttEregs1lbayIpLvpqYQqapgXSKcD_VEhVjSvxJxUm71pooeQua56XURok8m1Uh6UWxNLGXrySE_pIoQXDcH_0RY5GbaDsWmkB42-7gPP1ZIkg679hmgkqsBnsM0BR1FmU7kRUcXGw3nwmAnAw0qm2_hcT7vND5wX3KCFVA2iy0aytws_nAP8SgZRXbRdIpFdS1w6fJBxJE8XLdg-Txi2fCcLuRf2fDIfjR8RPq7f3SgoaKxS1W3_dp"/>
+                    <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"/>
+                </div>
+                <h2 className="font-display-lg text-4xl text-primary mb-2">Ask Feynman</h2>
+                <p className="font-body-lg text-on-surface-variant max-w-lg mx-auto mb-10 italic">
+                    "Explore ideas through the writings and lectures of Richard Feynman."
+                </p>
+                <div className="grid grid-cols-2 gap-3 w-full max-w-2xl">
+                    {["Explain quantum electrodynamics simply","Why is curiosity important?","What is the scientific method?","Tell me about uncertainty in physics"].map((prompt,idx) => (
+                        <button key={idx} onClick={()=>newSession(prompt)} className="text-left p-5 glass-panel border border-outline-variant/20 hover:border-secondary/50 transition-all group relative overflow-hidden manuscript-shimmer">
+                            <div className="absolute left-0 top-0 bottom-0 w-1 bg-secondary opacity-0 group-hover:opacity-100 transition-opacity"/>
+                            <p className="font-body-md text-sm text-on-surface group-hover:text-secondary transition-colors">{prompt}</p>
+                        </button>
+                    ))}
+                </div>
+            </section>
+            <div className="fixed bottom-10 left-1/2 -translate-x-1/2 z-50" style={{marginLeft:'140px'}}>
+                <div className="glass-panel p-4 rounded-full border border-outline-variant/20 flex items-center gap-4 shadow-2xl cursor-pointer" onClick={()=>newSession()}>
+                    <div className="w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center border border-secondary/30 text-secondary">
+                        <span className="material-symbols-outlined text-2xl">edit</span>
+                    </div>
+                    <div className="pr-4">
+                        <p className="font-label-md text-on-surface-variant text-[10px] uppercase tracking-widest">Research Engine</p>
+                        <p className="font-body-md text-sm text-on-surface">Start a new inquiry...</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    );
+
+    // ── Inquiry Page ──
+    const InquiryPage = () => {
+        const [input, setInput] = useState('');
+        const scrollRef = useRef(null);
+        const inputRef = useRef(null);
+
+        useEffect(() => {
+            if (scrollRef.current) scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+        }, [messages, loading]);
+
+        const handleSend = () => {
+            if (!input.trim() || loading) return;
+            const text = input;
+            setInput('');
+            sendMessage(text);
+        };
+
+        return (
+            <main className="ml-panel-sidebar flex-1 flex flex-col relative h-screen">
+                <header className="flex items-center w-full px-gutter h-14 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/10 sticky top-0 z-10">
+                    <span className="font-headline-lg text-primary">Research Inquiry</span>
+                </header>
+                <div className="flex flex-1 overflow-hidden">
+                    <div ref={scrollRef} className="flex-1 overflow-y-auto custom-scrollbar px-gutter pb-40 pt-8 flex flex-col items-center">
+                        <div className="w-full max-w-2xl space-y-10">
+                            {messages.length === 0 && !loading && (
+                                <div className="text-center py-16 opacity-30">
+                                    <span className="material-symbols-outlined text-4xl text-on-surface-variant mb-3 block">auto_stories</span>
+                                    <p className="font-body-lg text-on-surface-variant italic">"What I cannot create, I do not understand."</p>
+                                    <p className="font-label-md text-[11px] text-on-surface-variant mt-1">— Richard Feynman</p>
+                                </div>
+                            )}
+                            {messages.map((msg,i) => msg.role==='user'
+                                ? <UserMessage key={i} content={msg.content}/>
+                                : <AssistantMessage key={i} content={msg.content} msgSources={msg.sources}/>
+                            )}
+                            {loading && (
+                                <div className="flex items-center gap-3 opacity-60 fade-up">
+                                    <div className="flex gap-1">
+                                        <div className="w-1.5 h-1.5 bg-secondary rounded-full animate-bounce" style={{animationDelay:'0s'}}/>
+                                        <div className="w-1.5 h-1.5 bg-secondary rounded-full animate-bounce" style={{animationDelay:'0.2s'}}/>
+                                        <div className="w-1.5 h-1.5 bg-secondary rounded-full animate-bounce" style={{animationDelay:'0.4s'}}/>
+                                    </div>
+                                    <span className="font-label-md text-xs text-secondary">Consulting the archives...</span>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                    <InspectorPanel/>
+                </div>
+                <div className="fixed bottom-5 left-1/2 -translate-x-1/2 z-30 w-full max-w-2xl px-6" style={{marginLeft:'140px'}}>
+                    <div className="glass-panel px-5 py-3 rounded-2xl border border-outline-variant/20 flex items-center gap-3 shadow-2xl">
+                        <input ref={inputRef} type="text" value={input} onChange={e=>setInput(e.target.value)}
+                            onKeyDown={e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();handleSend()}}}
+                            placeholder="Ask Feynman anything..." disabled={loading}
+                            className="flex-1 bg-transparent outline-none font-body-md text-on-surface placeholder-on-surface-variant/50 text-sm"/>
+                        <button onClick={handleSend} disabled={loading||!input.trim()}
+                            className="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center text-secondary hover:scale-105 transition-transform disabled:opacity-30">
+                            <span className="material-symbols-outlined text-sm" style={{fontVariationSettings:"'FILL' 1"}}>send</span>
+                        </button>
+                    </div>
+                </div>
+            </main>
+        );
+    };
+
+    return (
+        <div className="relative">
+            <canvas id="particle-canvas" ref={canvasRef}/>
+            <div className="flex h-screen w-full relative">
+                <Sidebar/>
+                {page === 'dashboard' ? <Dashboard/> : <InquiryPage/>}
+            </div>
+        </div>
+    );
+};
+
+const root = createRoot(document.getElementById('root'));
+root.render(<App/>);
+</script>
+</body>
+</html>

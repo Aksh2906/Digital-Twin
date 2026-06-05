@@ -4,6 +4,8 @@
 .env
 *.env
 .env.*
+venv_old/
+venv_old_2/
 
 # ========================
 # Vector Database (auto-generated, large)
